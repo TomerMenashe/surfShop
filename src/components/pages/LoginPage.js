@@ -10,7 +10,7 @@ import '../../styles/AuthPages.css';
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false); // State for the "Remember Me" checkbox
+  const [rememberMe, setRememberMe] = useState(false); 
   const [error, setError] = useState('');
   const navigate = useNavigate();
 

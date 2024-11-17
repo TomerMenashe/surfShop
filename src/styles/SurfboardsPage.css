@@ -1,62 +1,156 @@
-/* Set up a grid layout for surfboards */
+/* Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: #1c1c1c; /* Match background color */
+}
+
+/* Navigation Bar Consideration */
+.surfboard-page {
+  padding-top: 120px; /* Space to account for the navbar and extra buffer */
+  box-sizing: border-box;
+}
+
+/* Grid Layout for Surfboards */
 .surfboard-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Display 3 surfboards per row */
-    gap: 50px; /* Space between the surfboards */
-    padding: 0 40px; /* Page padding */
-    background-color: #fff; /* Plain white background */
-    justify-items: center; /* Center align the surfboards in the grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fewer boards per row */
+  gap: 40px; /* Increased spacing between cards */
+  padding: 40px 20px; /* Balanced padding */
+  background: linear-gradient(180deg, #1c1c1c, #2e2e2e); /* Black gradient background */
+  justify-items: center;
+  box-sizing: border-box;
+  width: 100%; /* Ensure it fills the screen */
+}
+
+/* Surfboard Card */
+.surfboard-card {
+  background: #222; /* Dark card background to align with theme */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow for black theme */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  padding: 15px;
+}
+
+.surfboard-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+/* Surfboard Image */
+.surfboard-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensure proper scaling */
+  border-radius: 10px; /* Soft corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 10px;
+}
+
+.surfboard-card:hover img {
+  transform: scale(1.03); /* Slight zoom effect */
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.5); /* Orange glow */
+}
+
+/* Surfboard Name */
+.surfboard-card h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
+  color: #ff7f50; /* Orange theme color */
+  margin: 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Surfboard Details (Length & Price) */
+.surfboard-card p {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #bbb; /* Light text for dark theme */
+  font-size: 1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.surfboard-card .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff7f50; /* Accent orange color for price */
+  margin-top: 10px;
+}
+
+/* Divider Line */
+.surfboard-card .divider {
+  height: 1px;
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1); /* Subtle divider */
+  margin: 15px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .surfboard-page {
+    padding-top: 110px; /* Adjusted for slightly smaller navbar height */
   }
-  
-  /* Remove card-like appearance from surfboard item */
-  .surfboard-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none; /* Remove background */
-    border: none; /* Remove borders */
-    box-shadow: none; /* Remove shadow */
-    margin: 0;
-    padding: 0;
-    cursor: pointer; /* Add a pointer for interactivity */
+
+  .surfboard-list {
+    gap: 30px; /* Adjust spacing between cards for smaller screens */
+    padding: 30px 15px;
   }
-  
-  /* Surfboard image with no borders or box effects */
-  .surfboard-card img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensure image scales properly */
-    margin-bottom: 10px; /* Space between image and text */
-    border: none; /* No borders */
-  }
-  
-  /* Surfboard Name */
+
   .surfboard-card h2 {
-    font-family: 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
-    color: #004F6E; /* Professional blue shade */
-    margin: 0;
-    text-align: center;
-  }
-  
-  /* Surfboard Length and Price */
-  .surfboard-card p {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    font-size: 1.1rem;
-    margin: 5px 0;
-    text-align: center;
-  }
-  
-  .surfboard-card .price {
     font-size: 1.4rem;
-    font-weight: bold;
-    color: #222;
   }
-  
-  /* Hover Effect: Slight enlargement of the surfboard image */
-  .surfboard-card:hover img {
-    transform: scale(1.05); /* Slight image enlargement */
-    transition: transform 0.3s ease; /* Smooth transition */
+
+  .surfboard-card .price {
+    font-size: 1.2rem;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .surfboard-list {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Limit to 1-2 cards per row */
+    padding: 20px 10px;
+  }
+
+  .surfboard-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .surfboard-card .price {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .surfboard-page {
+    padding-top: 100px; /* Adjust for mobile navbar height */
+  }
+
+  .surfboard-list {
+    grid-template-columns: 1fr; /* Single card per row on mobile */
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .surfboard-card {
+    padding: 10px; /* Smaller padding for compact view */
+  }
+
+  .surfboard-card img {
+    border-radius: 8px;
+  }
+
+  .surfboard-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .surfboard-card .price {
+    font-size: 1rem;
+  }
+}

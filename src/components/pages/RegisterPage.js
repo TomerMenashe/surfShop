@@ -1,4 +1,3 @@
-// src/components/pages/RegisterPage.js
 import React, { useState } from 'react';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth } from '../../firebase';
@@ -11,6 +10,7 @@ const RegisterPage = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [isAdmin, setIsAdmin] = useState(false); // New state for isAdmin
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
@@ -23,10 +23,11 @@ const RegisterPage = () => {
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
       console.log('Registered User:', userCredential.user);
 
-      // Store user data in Firestore without storing the password
+      // Store user data in Firestore
       await setDoc(doc(db, 'users', userCredential.user.uid), {
         username,
-        email
+        email,
+        isAdmin // Store the isAdmin field
       });
 
       navigate('/'); // Redirect to login page after successful registration
@@ -72,6 +73,17 @@ const RegisterPage = () => {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+        </div>
+        <div className="form-group">
+          <label htmlFor="isAdmin">
+            <input
+              type="checkbox"
+              id="isAdmin"
+              checked={isAdmin}
+              onChange={(e) => setIsAdmin(e.target.checked)}
+            />
+            Register as Admin
+          </label>
         </div>
         <button type="submit" className="auth-btn">Register</button>
       </form>

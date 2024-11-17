@@ -1,30 +1,31 @@
 /* Navigation Bar */
 .navbar {
-  width: 96%;
-  padding: 15px 30px;
+  width: 100%; /* Full width of the screen */
+  padding: 10px 20px; /* Comfortable padding */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.85); /* Semi-transparent black */
   color: #fff;
   position: fixed;
   top: 0;
-  left: 2%;
-  z-index: 100;
+  left: 0;
+  z-index: 1000;
   border-radius: 0 0 8px 8px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; /* Ensures consistent sizing */
 }
 
-/* Left Side Home Icon */
+/* Home Icon (Left Side) */
 .nav-left {
   display: flex;
   align-items: center;
 }
 
 .home-icon img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -33,35 +34,35 @@
   transform: scale(1.1);
 }
 
-/* Navigation Links */
+/* Navigation Links (Center) */
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px; /* Even spacing between links */
 }
 
 .nav-link {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
-  transition: color 0.3s ease-in-out;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #ff7f50;
+  color: #ff7f50; /* Coral color for hover */
 }
 
 /* Navigation Actions (Search and Cart) */
 .nav-actions {
   display: flex;
-  gap: 15px;
   align-items: center;
+  gap: 15px; /* Balanced spacing */
 }
 
 /* Search Icon */
 .search-icon img {
-  width: 25px;
+  width: 25px; /* Standard size */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -72,160 +73,71 @@
 
 /* Cart Button */
 .cart-btn {
-  background-color: rgba(255, 127, 80, 0.8);
+  background-color: rgba(255, 127, 80, 0.9); /* Coral color */
   color: #fff;
   border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  padding: 8px 15px;
   border-radius: 5px;
-  font-weight: 600;
-}
-
-.cart-btn:hover {
-  background-color: #ff5733;
-}
-
-/* Search Dropdown */
-.search-dropdown {
-  position: absolute;
-  top: 65px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%; /* Centered and smaller width */
-  padding: 15px 30px;
-  background-color: rgba(0, 0, 0, 0.85); /* Same background color as the navbar */
-  border-radius: 0 0 0 0; /* Remove bottom radius for a connected look */
-  z-index: 101;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 0; /* Remove extra space between search and results */
-}
-
-/* Search Input */
-.search-input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  border-radius: 5px 5px 0 0; /* Rounded corners only at the top */
-  outline: none;
-  font-size: 1rem;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.search-input::placeholder {
-  color: #ddd;
-}
-
-/* Search Close Button */
-.search-close {
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.search-close:hover {
-  color: #ff7f50;
-}
-
-/* Search Results Container */
-.search-results {
-  position: absolute;
-  top: 65px; /* Align results directly below the search bar */
-  left: 50%;
-  transform: translateX(-50%);
-  width: 98.5%; /* Match width of search bar */
-  padding: 10px;
-  max-height: 400px;
-  overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.9); /* Darker background for results */
-  border-radius: 0 0 8px 8px; /* Rounded corners only at the bottom */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  z-index: 101;
-  margin-top: 0px; /* Ensure there is no gap between the search bar and results */
-}
-
-/* Search Results List */
-.search-results ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Individual Search Result */
-.search-result-item {
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  border-bottom: 1px solid #444; /* Darker separator */
+  font-weight: 600;
+  font-size: 0.9rem;
   transition: background-color 0.3s ease;
 }
 
-.search-result-item:hover {
-  background-color: rgba(255, 127, 80, 0.2); /* Semi-transparent coral on hover */
+.cart-btn:hover {
+  background-color: #ff5733; /* Darker coral on hover */
 }
 
-/* Search Result Link */
-.search-result-link {
-  display: flex;
-  width: 200%;
-  text-decoration: none;
-  color: #fff;
-}
-
-/* Search Result Image */
-.search-result-image img {
-  width: 60px;
-  height: auto;
-  object-fit: cover;
-  margin-right: 15px;
-}
-
-/* Search Result Details */
-.search-result-details {
-  display: flex;
-  flex-direction: column;
-  white-space: normal; /* Allow full product names to be displayed */
-}
-
-.search-result-name {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.search-result-sku {
-  font-size: 0.9rem;
-  color: #bbb;
-}
-
-.search-result-description {
-  font-size: 0.85rem;
-  color: #bbb;
-}
-
-/* User Info (Username) */
-.user-info {
+/* Responsive Dropdown and Results */
+.search-dropdown {
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%; /* Prevents overflow */
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 0 0 8px 8px;
+  z-index: 999;
   display: flex;
   align-items: center;
-  gap: 9px;
-  font-size: 0.5rem;
-  color: #fff;
-  font-weight: 500;
-  margin-left: 15px;
+  gap: 10px;
 }
 
-.username {
-  padding: 5px 10px;
-  background-color: rgba(255, 127, 80, 0.8);
-  border-radius: 5px;
+.search-results {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 92%; /* Prevents overflow */
+  max-height: 300px;
+  overflow-y: auto;
+  background-color: rgba(0, 0, 0, 0.95);
+  border-radius: 0 0 8px 8px;
+  padding: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
-.username:hover {
-  background-color: #ff5733;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide links for smaller screens */
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-btn {
+    padding: 6px 12px; /* Adjusted for smaller screens */
+    font-size: 0.85rem;
+  }
+
+  .search-dropdown,
+  .search-results {
+    width: 90%; /* Further reduce width for mobile */
+  }
 }

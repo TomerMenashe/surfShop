@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate for navigation
+import { useNavigate } from 'react-router-dom';
+import PageWrapper from './PageWrapper'; // Import the PageWrapper component
 import '../../styles/SurfboardsPage.css';  // Import the updated CSS
 
 const SurfboardsPage = () => {
@@ -33,20 +34,22 @@ const SurfboardsPage = () => {
     navigate(`/surfboards/${surfboard.sku}`, { state: { surfboard } });  // Use sku for navigation
   };
 
-  if (loading) return <p>Loading surfboards...</p>;
-  if (error) return <p>Error: {error}</p>;
+  if (loading) return <PageWrapper><p>Loading surfboards...</p></PageWrapper>;
+  if (error) return <PageWrapper><p>Error: {error}</p></PageWrapper>;
 
   return (
-    <div className="surfboard-list">
-      {surfboards.map((surfboard) => (
-        <div key={surfboard.sku} className="surfboard-card" onClick={() => handleBoardClick(surfboard)}>
-          <img src={surfboard.image} alt={surfboard.model} />
-          <h2>{surfboard.brand} - {surfboard.model}</h2>
-          <p>Length: {surfboard.length} ft</p>
-          <p className="price">Price: ${surfboard.price}</p>
-        </div>
-      ))}
-    </div>
+    <PageWrapper>
+      <div className="surfboard-list">
+        {surfboards.map((surfboard) => (
+          <div key={surfboard.sku} className="surfboard-card" onClick={() => handleBoardClick(surfboard)}>
+            <img src={surfboard.image} alt={surfboard.model} />
+            <h2>{surfboard.brand} - {surfboard.model}</h2>
+            <p>Length: {surfboard.length} ft</p>
+            <p className="price">Price: ${surfboard.price}</p>
+          </div>
+        ))}
+      </div>
+    </PageWrapper>
   );
 };
 
