@@ -7,7 +7,7 @@ const axios = require('axios');
 const router = express.Router();
 
 //** SerpAPI key for authentication **//
-const SERPAPI_KEY = '1f60ac8501ebbd859aa349b1105d93eaf7a14e3fa08d7140599b3b3cbdaffc7a';
+const SERPAPI_KEY = 'your api key';
 
 //** POST / (main endpoint to get weather based on location) **//
 router.post('/', async (req, res) => {
