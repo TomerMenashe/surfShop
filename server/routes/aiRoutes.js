@@ -19,7 +19,7 @@ router.post('/recommend-surf-spot', async (req, res) => {
   }
 
   try {
-    const apiKey = 'you api key';
+    const apiKey = '';
 
     const messages = [
       {
