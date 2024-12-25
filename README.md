@@ -24,16 +24,31 @@ This project consists of two main components:
 ## Screenshots
 
 ### Home Page
-![Home Page](./screenshots/homepage.png)
+![Home Page](./src/assets/images/homePage.png)
 
-### Surfboard Details
-![Surfboard Details](./screenshots/surfboarddetails.png)
+### Login
+![Login Page](./src/assets/images/login.png)
 
-### Cart Page
-![Cart Page](./screenshots/cartpage.png)
+### Register
+![Register Page](./src/assets/images/register.png)
+
+### Surfboard Page
+![Surfboards Page](./src/assets/images/surfbordPage.png)
+
+### Live Camera
+![Live Camera Page](./src/assets/images/liveCamera.png)
+
+### Find A Spot
+![Find A Spot](./src/assets/images/findASpot.png)
+
+### Find A Spot
+![Find A Spot](./src/assets/images/findASpot.png)
+
+### Reviews
+![Reviews](./src/assets/images/reviews.png)
 
 ### Admin Panel
-![Admin Panel](./screenshots/adminpanel.png)
+![Admin Panel](./src/assets/images/admin.png)
 
 ## Getting Started
 
@@ -185,15 +200,15 @@ Admin users can log in to access advanced management features.
 ### Contributing
 Contributions are welcome! Please follow these steps to contribute:
 
-1.Fork the repository.
+1. Fork the repository.
 
-2.Create a new branch for your feature or bugfix.
+2. Create a new branch for your feature or bugfix.
 
-3.Commit your changes with clear and descriptive messages.
+3. Commit your changes with clear and descriptive messages.
 
-4.Push your changes to your forked repository.
+4. Push your changes to your forked repository.
 
-5.Create a pull request to the main repository.
+5. Create a pull request to the main repository.
 
 ### Author
 Tomer Menashe
