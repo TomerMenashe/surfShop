@@ -1,0 +1,746 @@
+[
+  {
+    "id": 1734618815969,
+    "sku": "ST-GLID-003",
+    "username": "john_doe",
+    "rating": 5,
+    "comment": "This board is fantastic! It glides so smoothly and handles well on all types of waves.",
+    "createdAt": "2024-12-19T14:33:35.969Z"
+  },
+  {
+    "id": 1734618830636,
+    "sku": "ST-GLID-003",
+    "username": "sara_smith",
+    "rating": 4,
+    "comment": "Great board! The glide is smooth, but I feel like it could use a bit more stability on bigger waves.",
+    "createdAt": "2024-12-19T14:33:50.636Z"
+  },
+  {
+    "id": 1734618874227,
+    "sku": "ST-GLID-003",
+    "username": "alex_jones",
+    "rating": 4,
+    "comment": "Solid board with great balance. Very happy with the performance.",
+    "createdAt": "2024-12-19T14:34:34.227Z"
+  },
+  {
+    "id": 1734618893325,
+    "sku": "ST-GLID-003",
+    "username": "emily_brown",
+    "rating": 5,
+    "comment": "Absolutely love this board! Perfect for all types of waves, highly recommended.",
+    "createdAt": "2024-12-19T14:34:53.325Z"
+  },
+  {
+    "id": 1734618925930,
+    "sku": "ST-GLID-003",
+    "username": "mike_davis",
+    "rating": 3,
+    "comment": "It's good, but not the best board I've used. It's a bit too heavy for me.",
+    "createdAt": "2024-12-19T14:35:25.930Z"
+  },
+  {
+    "id": 1734618934422,
+    "sku": "ST-GLID-003",
+    "username": "lisa_white",
+    "rating": 5,
+    "comment": "A really great board. I love how it handles on the water, and it's easy to maneuver.",
+    "createdAt": "2024-12-19T14:35:34.422Z"
+  },
+  {
+    "id": 1734618951452,
+    "sku": "ST-GLID-003",
+    "username": "jack_black",
+    "rating": 4,
+    "comment": "A solid performer! It's a little difficult to turn quickly, but overall, I like it.",
+    "createdAt": "2024-12-19T14:35:51.452Z"
+  },
+  {
+    "id": 1734709201559,
+    "sku": "ST-GLID-003",
+    "username": "testuser",
+    "rating": 5,
+    "comment": "Great board!",
+    "createdAt": "2024-12-20T15:40:01.559Z"
+  },
+  {
+    "id": 1734619058607,
+    "sku": "SQ-EXPL-005",
+    "username": "michael_martin",
+    "rating": 5,
+    "comment": "The SeaQuest Explorer is incredible! Great speed, maneuverability, and stability.",
+    "createdAt": "2024-12-19T14:37:38.607Z"
+  },
+  {
+    "id": 1734619067890,
+    "sku": "SQ-EXPL-005",
+    "username": "jane_smith",
+    "rating": 5,
+    "comment": "Best board I've ever used! The SeaQuest Explorer is perfect for tackling big waves.",
+    "createdAt": "2024-12-19T14:38:20.789Z"
+  },
+  {
+    "id": 1734619075123,
+    "sku": "SQ-EXPL-005",
+    "username": "paul_green",
+    "rating": 4,
+    "comment": "Great board! A little heavy for me but still performs really well.",
+    "createdAt": "2024-12-19T14:38:35.123Z"
+  },
+  {
+    "id": 1734619089764,
+    "sku": "SQ-EXPL-005",
+    "username": "sophie_lee",
+    "rating": 4,
+    "comment": "Nice performance overall, but I felt the board could have been more responsive during quick turns.",
+    "createdAt": "2024-12-19T14:39:12.764Z"
+  },
+  {
+    "id": 1734619098501,
+    "sku": "SQ-EXPL-005",
+    "username": "robert_jones",
+    "rating": 3,
+    "comment": "Good board but doesn't handle as well as I expected in choppy waters.",
+    "createdAt": "2024-12-19T14:39:48.501Z"
+  },
+  {
+    "id": 1734619105647,
+    "sku": "SQ-EXPL-005",
+    "username": "chris_doe",
+    "rating": 5,
+    "comment": "An absolute must-have for intermediate surfers! Smooth ride and easy to control.",
+    "createdAt": "2024-12-19T14:40:05.647Z"
+  },
+  {
+    "id": 1734619111723,
+    "sku": "OC-FLOW-002",
+    "username": "sara_davis",
+    "rating": 5,
+    "comment": "The Oceanic Flow is perfect for small waves! It has a great feel and responsiveness.",
+    "createdAt": "2024-12-19T14:40:50.723Z"
+  },
+  {
+    "id": 1734619121459,
+    "sku": "OC-FLOW-002",
+    "username": "johnny_kim",
+    "rating": 4,
+    "comment": "Really nice board for beginners, I feel more confident on the waves now.",
+    "createdAt": "2024-12-19T14:41:01.459Z"
+  },
+  {
+    "id": 1734619128984,
+    "sku": "OC-FLOW-002",
+    "username": "kelly_wilson",
+    "rating": 5,
+    "comment": "Absolutely love this board! Great for learning and growing my skills.",
+    "createdAt": "2024-12-19T14:41:28.984Z"
+  },
+  {
+    "id": 1734619136372,
+    "sku": "OC-FLOW-002",
+    "username": "peter_morris",
+    "rating": 3,
+    "comment": "Good, but I found it a bit slow in bigger waves. Still great for smaller ones.",
+    "createdAt": "2024-12-19T14:41:56.372Z"
+  },
+  {
+    "id": 1734619142682,
+    "sku": "SL-CRUISE-007",
+    "username": "tomi_lee",
+    "rating": 5,
+    "comment": "The Shoreline Cruiser is by far the best longboard I have used!",
+    "createdAt": "2024-12-19T14:42:02.682Z"
+  },
+  {
+    "id": 1734619151743,
+    "sku": "SL-CRUISE-007",
+    "username": "george_brown",
+    "rating": 4,
+    "comment": "Great board for beginners! It's smooth and easy to handle, but it could be a bit faster.",
+    "createdAt": "2024-12-19T14:42:31.743Z"
+  },
+  {
+    "id": 1734619159986,
+    "sku": "SL-CRUISE-007",
+    "username": "emily_smith",
+    "rating": 5,
+    "comment": "Super stable and perfect for easy cruising on small waves.",
+    "createdAt": "2024-12-19T14:42:59.986Z"
+  },
+  {
+    "id": 1734619165710,
+    "sku": "SL-CRUISE-007",
+    "username": "lucy_choi",
+    "rating": 5,
+    "comment": "Perfect for smooth rides and easy handling! My favorite longboard.",
+    "createdAt": "2024-12-19T14:43:35.710Z"
+  },
+  {
+    "id": 1734780183721,
+    "sku": "SB-EPIC-017",
+    "username": "admin",
+    "rating": 5,
+    "comment": "This board is amazing, cutting the waves like a pro!",
+    "createdAt": "2024-12-21T11:23:03.721Z"
+  },
+  {
+    "id": 1734775000101,
+    "sku": "SB-EPIC-017",
+    "username": "marco_polo",
+    "rating": 4,
+    "comment": "Rides smoothly but took me a few sessions to get used to its turning speed.",
+    "createdAt": "2024-12-21T10:01:00.101Z"
+  },
+  {
+    "id": 1734775000202,
+    "sku": "SB-EPIC-017",
+    "username": "jess_waves",
+    "rating": 5,
+    "comment": "Epic indeed! Perfect for intermediate surfers wanting to push boundaries.",
+    "createdAt": "2024-12-21T10:02:00.202Z"
+  },
+  {
+    "id": 1734775000303,
+    "sku": "SB-EPIC-017",
+    "username": "wave_ninja",
+    "rating": 5,
+    "comment": "It handles bigger waves surprisingly well. Awesome board!",
+    "createdAt": "2024-12-21T10:03:00.303Z"
+  },
+  {
+    "id": 1734775000404,
+    "sku": "SB-EPIC-017",
+    "username": "surf_fan",
+    "rating": 4,
+    "comment": "Overall great, but the traction pad could use a slight upgrade.",
+    "createdAt": "2024-12-21T10:04:00.404Z"
+  },
+  {
+    "id": 1734775000505,
+    "sku": "SB-EPIC-017",
+    "username": "beachlover",
+    "rating": 5,
+    "comment": "I love the shape and feel on the water. My new go-to board!",
+    "createdAt": "2024-12-21T10:05:00.505Z"
+  },
+  {
+    "id": 1734775000606,
+    "sku": "SB-EPIC-017",
+    "username": "ocean_dream",
+    "rating": 4,
+    "comment": "Stable ride and decent speed. Ideal for mid-level surfers.",
+    "createdAt": "2024-12-21T10:06:00.606Z"
+  },
+  {
+    "id": 1734775101101,
+    "sku": "RP-ALPH-008",
+    "username": "surf_champ",
+    "rating": 5,
+    "comment": "The Riptide Alpha is light yet sturdy. Great for intermediate moves!",
+    "createdAt": "2024-12-21T10:10:01.101Z"
+  },
+  {
+    "id": 1734775101202,
+    "sku": "RP-ALPH-008",
+    "username": "wave_crusher",
+    "rating": 4,
+    "comment": "Nice transition board for stepping up from basic surfers.",
+    "createdAt": "2024-12-21T10:11:02.202Z"
+  },
+  {
+    "id": 1734775101303,
+    "sku": "RP-ALPH-008",
+    "username": "kiara_surf",
+    "rating": 5,
+    "comment": "I adore how responsive it is to quick turns!",
+    "createdAt": "2024-12-21T10:12:03.303Z"
+  },
+  {
+    "id": 1734775101404,
+    "sku": "RP-ALPH-008",
+    "username": "johnny_surfs",
+    "rating": 4,
+    "comment": "Well built but took me some time to adjust to the rails. Still love it.",
+    "createdAt": "2024-12-21T10:13:04.404Z"
+  },
+  {
+    "id": 1734775101505,
+    "sku": "RP-ALPH-008",
+    "username": "maria_m",
+    "rating": 5,
+    "comment": "Really stable feel and easy to catch small waves. Highly recommend.",
+    "createdAt": "2024-12-21T10:14:05.505Z"
+  },
+  {
+    "id": 1734775101606,
+    "sku": "RP-ALPH-008",
+    "username": "sam_dev",
+    "rating": 5,
+    "comment": "Thrilled with the performance. It's quite versatile on different wave sizes.",
+    "createdAt": "2024-12-21T10:15:06.606Z"
+  },
+  {
+    "id": 1734775101707,
+    "sku": "RP-ALPH-008",
+    "username": "gina_g",
+    "rating": 4,
+    "comment": "Surprisingly good for an intermediate board. Only wish it had more size options.",
+    "createdAt": "2024-12-21T10:16:07.707Z"
+  },
+  {
+    "id": 1734775202101,
+    "sku": "SS-VOY-009",
+    "username": "h2o_rider",
+    "rating": 5,
+    "comment": "SunSea Voyager is so comfy on medium waves. Great stability!",
+    "createdAt": "2024-12-21T10:20:01.101Z"
+  },
+  {
+    "id": 1734775202202,
+    "sku": "SS-VOY-009",
+    "username": "wave_sculptor",
+    "rating": 4,
+    "comment": "Solid choice for those wanting a step up from a beginner board.",
+    "createdAt": "2024-12-21T10:21:02.202Z"
+  },
+  {
+    "id": 1734775202303,
+    "sku": "SS-VOY-009",
+    "username": "speedy_surf",
+    "rating": 4,
+    "comment": "Glides well but the nose feels a tad wide. Still very satisfied.",
+    "createdAt": "2024-12-21T10:22:03.303Z"
+  },
+  {
+    "id": 1734775202404,
+    "sku": "SS-VOY-009",
+    "username": "luke_s",
+    "rating": 5,
+    "comment": "I can't believe how stable it feels even in choppier waters!",
+    "createdAt": "2024-12-21T10:23:04.404Z"
+  },
+  {
+    "id": 1734775202505,
+    "sku": "SS-VOY-009",
+    "username": "martina_wave",
+    "rating": 5,
+    "comment": "Definitely recommend if you like longer rides without losing speed.",
+    "createdAt": "2024-12-21T10:24:05.505Z"
+  },
+  {
+    "id": 1734775202606,
+    "sku": "SS-VOY-009",
+    "username": "ronny_s",
+    "rating": 3,
+    "comment": "It's nice but a bit heavier than I expected. Overall, still decent.",
+    "createdAt": "2024-12-21T10:25:06.606Z"
+  },
+  {
+    "id": 1734775202707,
+    "sku": "SS-VOY-009",
+    "username": "chloe_de",
+    "rating": 5,
+    "comment": "Handles like a dream on mid-size waves. My new favorite board!",
+    "createdAt": "2024-12-21T10:26:07.707Z"
+  },
+  {
+    "id": 1734775303101,
+    "sku": "DB-SKY-010",
+    "username": "skydancer",
+    "rating": 5,
+    "comment": "DeepBlue Skyline is super fast and lightweight. Love it!",
+    "createdAt": "2024-12-21T10:30:01.101Z"
+  },
+  {
+    "id": 1734775303202,
+    "sku": "DB-SKY-010",
+    "username": "tony_w",
+    "rating": 4,
+    "comment": "Makes sharp turns easily but might be too advanced for newbies.",
+    "createdAt": "2024-12-21T10:31:02.202Z"
+  },
+  {
+    "id": 1734775303303,
+    "sku": "DB-SKY-010",
+    "username": "delilah",
+    "rating": 5,
+    "comment": "Exactly what I needed for bigger waves. Super agile!",
+    "createdAt": "2024-12-21T10:32:03.303Z"
+  },
+  {
+    "id": 1734775303404,
+    "sku": "DB-SKY-010",
+    "username": "keen_surfer",
+    "rating": 5,
+    "comment": "Light as a feather. I'm impressed with how it cuts through the water.",
+    "createdAt": "2024-12-21T10:33:04.404Z"
+  },
+  {
+    "id": 1734775303505,
+    "sku": "DB-SKY-010",
+    "username": "bailey_w",
+    "rating": 4,
+    "comment": "Great on speed, but I wish the deck had a bit more traction.",
+    "createdAt": "2024-12-21T10:34:05.505Z"
+  },
+  {
+    "id": 1734775303606,
+    "sku": "DB-SKY-010",
+    "username": "martin_l",
+    "rating": 5,
+    "comment": "Absolute blast to ride! Perfect for advanced surfers looking for thrills.",
+    "createdAt": "2024-12-21T10:35:06.606Z"
+  },
+  {
+    "id": 1734775303707,
+    "sku": "DB-SKY-010",
+    "username": "serena_k",
+    "rating": 4,
+    "comment": "Definitely a performance board. Might be too challenging for intermediate riders.",
+    "createdAt": "2024-12-21T10:36:07.707Z"
+  },
+  {
+    "id": 1734775404101,
+    "sku": "OW-REEF-011",
+    "username": "reef_lover",
+    "rating": 4,
+    "comment": "Good stability and easy to handle. Lacks a bit of speed though.",
+    "createdAt": "2024-12-21T10:40:01.101Z"
+  },
+  {
+    "id": 1734775404202,
+    "sku": "OW-REEF-011",
+    "username": "sunshine",
+    "rating": 5,
+    "comment": "One of the smoothest rides I've had in mid-range boards!",
+    "createdAt": "2024-12-21T10:41:02.202Z"
+  },
+  {
+    "id": 1734775404303,
+    "sku": "OW-REEF-011",
+    "username": "clark_kent",
+    "rating": 4,
+    "comment": "Solid choice for working on your technique. Good all-around.",
+    "createdAt": "2024-12-21T10:42:03.303Z"
+  },
+  {
+    "id": 1734775404404,
+    "sku": "OW-REEF-011",
+    "username": "marla_s",
+    "rating": 5,
+    "comment": "Catches waves easily, and the control is great for moderate swells.",
+    "createdAt": "2024-12-21T10:43:04.404Z"
+  },
+  {
+    "id": 1734775404505,
+    "sku": "OW-REEF-011",
+    "username": "harvey",
+    "rating": 3,
+    "comment": "It's decent, but I prefer a faster board. This is more about balance.",
+    "createdAt": "2024-12-21T10:44:05.505Z"
+  },
+  {
+    "id": 1734775404606,
+    "sku": "OW-REEF-011",
+    "username": "gina_s",
+    "rating": 5,
+    "comment": "Awesome for everyday surfing. Not too advanced, not too basic.",
+    "createdAt": "2024-12-21T10:45:06.606Z"
+  },
+  {
+    "id": 1734775404707,
+    "sku": "OW-REEF-011",
+    "username": "robin_wave",
+    "rating": 4,
+    "comment": "Pretty reliable on smaller waves. I've had fun so far.",
+    "createdAt": "2024-12-21T10:46:07.707Z"
+  },
+  {
+    "id": 1734775505101,
+    "sku": "MS-JETS-012",
+    "username": "fast_fins",
+    "rating": 5,
+    "comment": "MarinaSurf Jetstream is for speed demons! I love the minimal drag.",
+    "createdAt": "2024-12-21T10:50:01.101Z"
+  },
+  {
+    "id": 1734775505202,
+    "sku": "MS-JETS-012",
+    "username": "jordan_x",
+    "rating": 4,
+    "comment": "Wicked fast, but definitely need experience to handle bigger waves.",
+    "createdAt": "2024-12-21T10:51:02.202Z"
+  },
+  {
+    "id": 1734775505303,
+    "sku": "MS-JETS-012",
+    "username": "samira",
+    "rating": 5,
+    "comment": "Feels amazing on overhead waves. Super agile!",
+    "createdAt": "2024-12-21T10:52:03.303Z"
+  },
+  {
+    "id": 1734775505404,
+    "sku": "MS-JETS-012",
+    "username": "bluewater",
+    "rating": 5,
+    "comment": "Cuts through water so smoothly, I'm incredibly impressed.",
+    "createdAt": "2024-12-21T10:53:04.404Z"
+  },
+  {
+    "id": 1734775505505,
+    "sku": "MS-JETS-012",
+    "username": "jessie",
+    "rating": 3,
+    "comment": "A bit tough for me to control in smaller waves. Probably best for bigger sets.",
+    "createdAt": "2024-12-21T10:54:05.505Z"
+  },
+  {
+    "id": 1734775505606,
+    "sku": "MS-JETS-012",
+    "username": "harry",
+    "rating": 4,
+    "comment": "Great performance board for advanced surfers. I'd recommend it.",
+    "createdAt": "2024-12-21T10:55:06.606Z"
+  },
+  {
+    "id": 1734775505707,
+    "sku": "MS-JETS-012",
+    "username": "lily_shores",
+    "rating": 5,
+    "comment": "Loving the speed. It's definitely an adrenaline junkie's board!",
+    "createdAt": "2024-12-21T10:56:07.707Z"
+  },
+  {
+    "id": 1734775606101,
+    "sku": "WC-NIMB-013",
+    "username": "soft_surf",
+    "rating": 5,
+    "comment": "WhiteCap Nimbus is super buoyant! Great for smaller folks or total beginners.",
+    "createdAt": "2024-12-21T11:00:01.101Z"
+  },
+  {
+    "id": 1734775606202,
+    "sku": "WC-NIMB-013",
+    "username": "bethany",
+    "rating": 4,
+    "comment": "Nice and soft ride. Wish it was a bit longer, but still good for newbies.",
+    "createdAt": "2024-12-21T11:01:02.202Z"
+  },
+  {
+    "id": 1734775606303,
+    "sku": "WC-NIMB-013",
+    "username": "dylan",
+    "rating": 5,
+    "comment": "Catches waves effortlessly, so stable underfoot. A gem!",
+    "createdAt": "2024-12-21T11:02:03.303Z"
+  },
+  {
+    "id": 1734775606404,
+    "sku": "WC-NIMB-013",
+    "username": "zoe",
+    "rating": 4,
+    "comment": "Real forgiving on wipeouts, but I'd like a tad more speed.",
+    "createdAt": "2024-12-21T11:03:04.404Z"
+  },
+  {
+    "id": 1734775606505,
+    "sku": "WC-NIMB-013",
+    "username": "matt",
+    "rating": 3,
+    "comment": "Too spongy for my taste. Beginners might like it, though.",
+    "createdAt": "2024-12-21T11:04:05.505Z"
+  },
+  {
+    "id": 1734775606606,
+    "sku": "WC-NIMB-013",
+    "username": "kelly_b",
+    "rating": 5,
+    "comment": "The buoyancy is perfect for my style. So easy to pop up and stay balanced.",
+    "createdAt": "2024-12-21T11:05:06.606Z"
+  },
+  {
+    "id": 1734775606707,
+    "sku": "WC-NIMB-013",
+    "username": "henry",
+    "rating": 4,
+    "comment": "Great starting board. I can definitely see improvements in my basics.",
+    "createdAt": "2024-12-21T11:06:07.707Z"
+  },
+  {
+    "id": 1734775707101,
+    "sku": "DW-TMBR-014",
+    "username": "eco_surfer",
+    "rating": 5,
+    "comment": "I love the eco-friendly materials! Feels great and guilt-free.",
+    "createdAt": "2024-12-21T11:10:01.101Z"
+  },
+  {
+    "id": 1734775707202,
+    "sku": "DW-TMBR-014",
+    "username": "jordan",
+    "rating": 4,
+    "comment": "Solid board, though I'm still adjusting to the extra flex.",
+    "createdAt": "2024-12-21T11:11:02.202Z"
+  },
+  {
+    "id": 1734775707303,
+    "sku": "DW-TMBR-014",
+    "username": "olivia",
+    "rating": 5,
+    "comment": "It's robust and glides well on medium waves. Very cool design, too!",
+    "createdAt": "2024-12-21T11:12:03.303Z"
+  },
+  {
+    "id": 1734775707404,
+    "sku": "DW-TMBR-014",
+    "username": "miles",
+    "rating": 5,
+    "comment": "Sustainability + performance = a win in my book. Love it!",
+    "createdAt": "2024-12-21T11:13:04.404Z"
+  },
+  {
+    "id": 1734775707505,
+    "sku": "DW-TMBR-014",
+    "username": "pat",
+    "rating": 3,
+    "comment": "A bit heavy for my taste, but I'm okay with it for the eco benefits.",
+    "createdAt": "2024-12-21T11:14:05.505Z"
+  },
+  {
+    "id": 1734775707606,
+    "sku": "DW-TMBR-014",
+    "username": "sierra",
+    "rating": 4,
+    "comment": "Great board. Not the fastest, but super stable in moderate waves.",
+    "createdAt": "2024-12-21T11:15:06.606Z"
+  },
+  {
+    "id": 1734775707707,
+    "sku": "DW-TMBR-014",
+    "username": "harper",
+    "rating": 5,
+    "comment": "Smooth ride and I appreciate the eco-conscious design. Thumbs up!",
+    "createdAt": "2024-12-21T11:16:07.707Z"
+  },
+  {
+    "id": 1734775808101,
+    "sku": "TW-EDGE-015",
+    "username": "wave_edge",
+    "rating": 5,
+    "comment": "TideWater Edge is so aggressive on turns. Perfect for advanced surfers!",
+    "createdAt": "2024-12-21T11:20:01.101Z"
+  },
+  {
+    "id": 1734775808202,
+    "sku": "TW-EDGE-015",
+    "username": "lauren",
+    "rating": 4,
+    "comment": "It’s great in bigger waves, but quite unforgiving for mistakes.",
+    "createdAt": "2024-12-21T11:21:02.202Z"
+  },
+  {
+    "id": 1734775808303,
+    "sku": "TW-EDGE-015",
+    "username": "marshall",
+    "rating": 5,
+    "comment": "I love how it carves! Really locks in on steep faces.",
+    "createdAt": "2024-12-21T11:22:03.303Z"
+  },
+  {
+    "id": 1734775808404,
+    "sku": "TW-EDGE-015",
+    "username": "savannah",
+    "rating": 5,
+    "comment": "Fast as lightning, I'm super impressed. Not for the faint of heart though!",
+    "createdAt": "2024-12-21T11:23:04.404Z"
+  },
+  {
+    "id": 1734775808505,
+    "sku": "TW-EDGE-015",
+    "username": "jason",
+    "rating": 4,
+    "comment": "Loving it in large swells, but its a bit tricky on smaller waves.",
+    "createdAt": "2024-12-21T11:24:05.505Z"
+  },
+  {
+    "id": 1734775808606,
+    "sku": "TW-EDGE-015",
+    "username": "mike",
+    "rating": 5,
+    "comment": "Best board I've used for advanced surf! It's absolutely thrilling.",
+    "createdAt": "2024-12-21T11:25:06.606Z"
+  },
+  {
+    "id": 1734775808707,
+    "sku": "TW-EDGE-015",
+    "username": "angie",
+    "rating": 4,
+    "comment": "Sticks to the wave face nicely. Could use slightly thicker rails for stability.",
+    "createdAt": "2024-12-21T11:26:07.707Z"
+  },
+  {
+    "id": 1734775909101,
+    "sku": "SM-LMTLS-016",
+    "username": "boundless",
+    "rating": 4,
+    "comment": "SurfMagic Limitless is pretty well-rounded. Great for mid-level surfers.",
+    "createdAt": "2024-12-21T11:30:01.101Z"
+  },
+  {
+    "id": 1734775909202,
+    "sku": "SM-LMTLS-016",
+    "username": "flora",
+    "rating": 5,
+    "comment": "Loved how quickly I could switch direction. Fantastic board!",
+    "createdAt": "2024-12-21T11:31:02.202Z"
+  },
+  {
+    "id": 1734775909303,
+    "sku": "SM-LMTLS-016",
+    "username": "ryan",
+    "rating": 5,
+    "comment": "Has that perfect balance of speed and control. I'm sold.",
+    "createdAt": "2024-12-21T11:32:03.303Z"
+  },
+  {
+    "id": 1734775909404,
+    "sku": "SM-LMTLS-016",
+    "username": "willow",
+    "rating": 4,
+    "comment": "A great step-up board from beginner level. I've had an easy transition.",
+    "createdAt": "2024-12-21T11:33:04.404Z"
+  },
+  {
+    "id": 1734775909505,
+    "sku": "SM-LMTLS-016",
+    "username": "tim",
+    "rating": 5,
+    "comment": "Definitely feels limitless! Maneuvers quickly and catches waves easily.",
+    "createdAt": "2024-12-21T11:34:05.505Z"
+  },
+  {
+    "id": 1734775909606,
+    "sku": "SM-LMTLS-016",
+    "username": "anna",
+    "rating": 3,
+    "comment": "Not bad, but I'm still looking for something a bit faster. Good all-rounder though.",
+    "createdAt": "2024-12-21T11:35:06.606Z"
+  },
+  {
+    "id": 1734775909707,
+    "sku": "SM-LMTLS-016",
+    "username": "maxine",
+    "rating": 5,
+    "comment": "So easy to handle in messy conditions. I'd recommend it to any intermediate surfer.",
+    "createdAt": "2024-12-21T11:36:07.707Z"
+  },
+  {
+    "id": 1735043587299,
+    "sku": "OC-FLOW-002",
+    "username": "admin",
+    "rating": 5,
+    "comment": "amazing bord!",
+    "createdAt": "2024-12-24T12:33:07.299Z"
+  }
+]

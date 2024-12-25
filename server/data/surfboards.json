@@ -1,0 +1,222 @@
+[
+  {
+    "brand": "Oceanic",
+    "model": "Flow",
+    "price": 650,
+    "image": "https://cisurfboards.com/cdn/shop/products/joe_feature.png?v=1619468440",
+    "description": "An excellent choice for intermediate surfers looking to improve their skills. The Oceanic Flow provides a smooth ride and helps surfers transition from smaller to more advanced waves with ease.",
+    "dateAdded": "2023-10-02T00:00:00Z",
+    "sku": "OC-FLOW-002",
+    "sizes": [
+      "6.5'0",
+      "6.7'0",
+      "6.9'0"
+    ]
+  },
+  {
+    "brand": "SurfTech",
+    "model": "Glider",
+    "price": 700,
+    "image": "https://cisurfboards.com/cdn/shop/products/Bonzer-3D-Featured-Image.png?v=1619470302",
+    "description": "A versatile board suitable for all wave conditions, ideal for beginners. Its stability and balance make it a great option for those just starting their surfing journey, offering plenty of room to grow in skill.",
+    "dateAdded": "2023-10-03T00:00:00Z",
+    "sku": "ST-GLID-003",
+    "sizes": [
+      "7.0'0",
+      "7.2'0",
+      "7.4'0"
+    ]
+  },
+  {
+    "brand": "WaveRider",
+    "model": "Xtreme",
+    "price": 900,
+    "image": "https://cisurfboards.com/cdn/shop/products/bunny_chow_feature.png?v=1619468702",
+    "description": "Engineered for speed and agility, this board is for surfers who love thrills. Designed with advanced hydrodynamics, the WaveRider Xtreme cuts through water with ease, making it perfect for adrenaline seekers.",
+    "dateAdded": "2023-10-04T00:00:00Z",
+    "sku": "WR-XTRM-004",
+    "sizes": [
+      "6.8'0",
+      "7.0'0",
+      "7.2'0"
+    ]
+  },
+  {
+    "brand": "SeaQuest",
+    "model": "Explorer",
+    "price": 750,
+    "image": "https://cisurfboards.com/cdn/shop/products/Bonzer-Biscuit-Deck-and-Bottom-for-Web.png?v=1619469073",
+    "description": "A stable and reliable board, perfect for long rides and exploring new waves. The SeaQuest Explorer offers durability and performance, allowing surfers to confidently navigate different water conditions.",
+    "dateAdded": "2023-10-05T00:00:00Z",
+    "sku": "SQ-EXPL-005",
+    "sizes": [
+      "7.2'0",
+      "7.4'0",
+      "7.6'0"
+    ]
+  },
+  {
+    "brand": "AquaSurf",
+    "model": "Zenith",
+    "price": 820,
+    "image": "https://cisurfboards.com/cdn/shop/products/Bonzer-Shelter-Deck-and-Bottom-for-Web-Green.png?v=1619469058",
+    "description": "Combines performance and style, ideal for surfers aiming for the next level. The Zenith’s lightweight design and sharp turning capabilities make it a top choice for those looking to enhance their surfing technique.",
+    "dateAdded": "2023-10-06T00:00:00Z",
+    "sku": "AS-ZEN-006",
+    "sizes": [
+      "6.4'0",
+      "6.6'0",
+      "6.8'0"
+    ]
+  },
+  {
+    "brand": "Shoreline",
+    "model": "Cruiser",
+    "price": 680,
+    "image": "https://cisurfboards.com/cdn/shop/products/BW_feature2.png?v=1619470403",
+    "description": "A longboard designed for smooth and easy rides, perfect for beginners and casual surfers. Its extended length provides excellent stability and an effortless glide on small to medium waves.",
+    "dateAdded": "2023-10-07T00:00:00Z",
+    "sku": "SL-CRUISE-007",
+    "sizes": [
+      "7.5'0",
+      "7.7'0",
+      "7.9'0"
+    ]
+  },
+  {
+    "brand": "Riptide",
+    "model": "Alpha",
+    "price": 780,
+    "image": "https://cisurfboards.com/cdn/shop/files/CI2.Pro_Featured_Image.png?v=1685148868",
+    "description": "Riptide's Alpha model emphasizes smooth transitions between waves and easy maneuverability, making it a solid choice for those advancing from beginner-level boards.",
+    "dateAdded": "2023-10-08T00:00:00Z",
+    "sku": "RP-ALPH-008",
+    "sizes": [
+      "6.4'0",
+      "6.6'0"
+    ]
+  },
+  {
+    "brand": "SunSea",
+    "model": "Voyager",
+    "price": 850,
+    "image": "https://cisurfboards.com/cdn/shop/files/Febs-Fish-Featured-Image.png?v=1728704215",
+    "description": "Designed for comfortable long rides, SunSea’s Voyager allows surfers to maintain balance on a variety of wave heights, ensuring a stable surfing session every time.",
+    "dateAdded": "2023-10-09T00:00:00Z",
+    "sku": "SS-VOY-009",
+    "sizes": [
+      "7.0'0",
+      "7.2'0",
+      "7.4'0"
+    ]
+  },
+  {
+    "brand": "DeepBlue",
+    "model": "Skyline",
+    "price": 950,
+    "image": "https://cisurfboards.com/cdn/shop/products/GSkate_Featured_Image.png?v=1678852875",
+    "description": "Featuring advanced materials for a lightweight ride, the Skyline is perfect for surfers seeking higher speeds and tighter turns in challenging wave conditions.",
+    "dateAdded": "2023-10-10T00:00:00Z",
+    "sku": "DB-SKY-010",
+    "sizes": [
+      "6.8'0",
+      "6.10'0"
+    ]
+  },
+  {
+    "brand": "OceanWave",
+    "model": "Reef",
+    "price": 720,
+    "image": "https://cisurfboards.com/cdn/shop/products/hoglet_feature.png?v=1619468891",
+    "description": "A mid-range board focusing on stability and performance. Ideal for surfers wanting to expand their repertoire while retaining control and comfort on moderate waves.",
+    "dateAdded": "2023-10-11T00:00:00Z",
+    "sku": "OW-REEF-011",
+    "sizes": [
+      "6.9'0",
+      "7.1'0"
+    ]
+  },
+  {
+    "brand": "MarinaSurf",
+    "model": "Jetstream",
+    "price": 975,
+    "image": "https://cisurfboards.com/cdn/shop/products/twin-pin-seafoam-futures-featured-image.png?v=1623264240",
+    "description": "Engineered for those craving speed, this board boasts a sleek design with minimal drag, letting experienced surfers push the boundaries in bigger waves.",
+    "dateAdded": "2023-10-12T00:00:00Z",
+    "sku": "MS-JETS-012",
+    "sizes": [
+      "6.6'0",
+      "6.8'0",
+      "7.0'0"
+    ]
+  },
+  {
+    "brand": "WhiteCap",
+    "model": "Nimbus",
+    "price": 640,
+    "image": "https://cisurfboards.com/cdn/shop/products/taco_grinder_feature.png?v=1619468809",
+    "description": "WhiteCap’s Nimbus offers a softer, more buoyant ride for beginners and light surfers, making wave entry more manageable and stable.",
+    "dateAdded": "2023-10-13T00:00:00Z",
+    "sku": "WC-NIMB-013",
+    "sizes": [
+      "7.1'0",
+      "7.3'0",
+      "7.5'0"
+    ]
+  },
+  {
+    "brand": "Driftwood",
+    "model": "Timber",
+    "price": 880,
+    "image": "https://cisurfboards.com/cdn/shop/products/Ultra-Joe-Featured-Image.png?v=1619470473",
+    "description": "Crafted with eco-friendly materials, the Timber maintains excellent strength and flexibility, suitable for surfers who appreciate both performance and sustainability.",
+    "dateAdded": "2023-10-14T00:00:00Z",
+    "sku": "DW-TMBR-014",
+    "sizes": [
+      "6.7'0",
+      "7.0'0"
+    ]
+  },
+  {
+    "brand": "TideWater",
+    "model": "Edge",
+    "price": 940,
+    "image": "https://cisurfboards.com/cdn/shop/products/high_5_feature.png?v=1619469127",
+    "description": "The Edge’s sleek outline and reinforced tail help surfers carve aggressively, making it a strong contender for advanced users in larger swells.",
+    "dateAdded": "2023-10-15T00:00:00Z",
+    "sku": "TW-EDGE-015",
+    "sizes": [
+      "6.6'0",
+      "6.8'0",
+      "7.0'0"
+    ]
+  },
+  {
+    "brand": "SurfMagic",
+    "model": "Limitless",
+    "price": 810,
+    "image": "https://cisurfboards.com/cdn/shop/products/Free_Scrubber_Featured_Image.png?v=1648678908",
+    "description": "A balanced, all-around board providing control in mild to moderate waves. SurfMagic’s Limitless is a reliable choice for those wanting to improve both speed and maneuverability.",
+    "dateAdded": "2023-10-16T00:00:00Z",
+    "sku": "SM-LMTLS-016",
+    "sizes": [
+      "6.5'0",
+      "6.7'0",
+      "6.9'0"
+    ]
+  },
+  {
+    "id": null,
+    "brand": "ShoreBreak",
+    "model": "Epic",
+    "price": 890,
+    "image": "https://cisurfboards.com/cdn/shop/products/Bonzer-3D-Featured-Image.png?v=1619470302",
+    "sku": "SB-EPIC-017",
+    "sizes": [
+      "6.6'0",
+      "6.8'0"
+    ],
+    "description": "Balancing performance and stability, the Epic is ideal for both intermediate and experienced surfers looking to expand their wave range. Its design provides a smooth ride while still allowing for quick turns and advanced maneuvers.",
+    "dateAdded": "2024-12-21T11:22:00.556Z"
+  }
+]

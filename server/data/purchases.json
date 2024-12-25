@@ -1,0 +1,78 @@
+{
+  "admin": [
+    {
+      "date": "2024-12-18T14:58:28.942Z",
+      "items": [
+        {
+          "sku": "ST-GLID-003",
+          "size": "7.0'0",
+          "quantity": 1,
+          "price": 700,
+          "model": "Glider"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-18T16:50:25.112Z",
+      "items": [
+        {
+          "sku": "ST-GLID-003",
+          "size": "7.0'0",
+          "quantity": 1,
+          "price": 700,
+          "model": "Glider"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-18T16:50:53.559Z",
+      "items": [
+        {
+          "sku": "SQ-EXPL-005",
+          "size": "7.2'0",
+          "quantity": 1,
+          "price": 750,
+          "model": "Explorer"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-24T12:29:09.548Z",
+      "items": [
+        {
+          "sku": "ST-GLID-003",
+          "size": "7.0'0",
+          "quantity": 3,
+          "price": 700,
+          "model": "Glider"
+        }
+      ]
+    }
+  ],
+  "gaya": [
+    {
+      "date": "2024-12-20T16:34:01.137Z",
+      "items": [
+        {
+          "sku": "ST-GLID-003",
+          "size": "7.4'0",
+          "quantity": 1,
+          "price": 700,
+          "model": "Glider"
+        }
+      ]
+    },
+    {
+      "date": "2024-12-21T11:14:23.272Z",
+      "items": [
+        {
+          "sku": "WR-XTRM-004",
+          "size": "6.8'0",
+          "quantity": 1,
+          "price": 900,
+          "model": "Xtreme"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "admin": {
+    "password": "admin",
+    "isAdmin": true
+  },
+  "user1": {
+    "password": "password123",
+    "isAdmin": false
+  },
+  "tomi": {
+    "password": "123qwe",
+    "isAdmin": false
+  },
+  "tomer": {
+    "password": "123456",
+    "isAdmin": false
+  },
+  "gaya": {
+    "password": "123qwe",
+    "isAdmin": false
+  },
+  "tomerMenashe": {
+    "password": "123456",
+    "isAdmin": false
+  }
+}

@@ -1,0 +1,488 @@
+{
+  "admin": [
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-18T17:06:15.716Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-18T17:06:30.903Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-18T17:06:49.606Z"
+    },
+    {
+      "action": "Added to cart: WR-XTRM-004, Size: 6.8'0, Quantity: 1",
+      "timestamp": "2024-12-18T17:24:29.836Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.2'0, Quantity: 1",
+      "timestamp": "2024-12-19T11:33:02.988Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-19T11:33:37.013Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-19T11:33:37.314Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-19T11:33:37.489Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-19T11:33:37.627Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-19T11:33:49.189Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-19T11:34:02.117Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-19T11:42:32.963Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T14:09:46.477Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:20:13.365Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:26:11.001Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:28:42.944Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:33:07.632Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:36:29.221Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:40:01.364Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:41:48.184Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:43:49.916Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:45:24.668Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.437Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.634Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.642Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.648Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.653Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:47:49.658Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:16.835Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:17.013Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:17.020Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:17.026Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:17.030Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:50:17.034Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.029Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.232Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.240Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.246Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.250Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:53:09.254Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:56:59.891Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T15:59:31.257Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:12:16.744Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:12:25.071Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:14:44.879Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:18:36.978Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:19:17.605Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:19:26.773Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:23:47.507Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:23:56.965Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:24:16.389Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:10:57.380Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:14:09.649Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:14:27.270Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:42.846Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.219Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.227Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.232Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.237Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.241Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.247Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:18:43.251Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:24:47.466Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:24:47.868Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:24:47.878Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:24:47.887Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:24:47.892Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.567Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.581Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.587Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.593Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.599Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:29:41.606Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:30:57.664Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:31:42.845Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:32:02.128Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:32:26.335Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:33:18.806Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:34:14.949Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:35:11.439Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:43:32.451Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:51:07.044Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T09:51:21.019Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T10:51:04.494Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-21T10:51:36.717Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T11:19:55.299Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-21T11:42:25.067Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T11:47:43.524Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:08:24.039Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:08:28.136Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:18:13.009Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-24T12:25:50.659Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:26:19.421Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:28:21.707Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.2'0, Quantity: 1",
+      "timestamp": "2024-12-24T12:28:41.644Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-24T12:30:56.944Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:31:52.677Z"
+    },
+    {
+      "action": "Added to cart: SQ-EXPL-005, Size: 7.2'0, Quantity: 1",
+      "timestamp": "2024-12-24T12:38:43.288Z"
+    }
+  ],
+  "user1": [
+    {
+      "type": "login",
+      "timestamp": "2024-12-18T08:26:39.713Z"
+    },
+    {
+      "type": "login",
+      "timestamp": "2024-12-18T08:27:26.217Z"
+    }
+  ],
+  "tomi": [
+    {
+      "type": "register",
+      "timestamp": "2024-12-18T08:35:44.893Z"
+    },
+    {
+      "type": "login",
+      "timestamp": "2024-12-18T08:35:59.714Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-19T11:46:48.146Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T14:09:37.773Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:14:52.094Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.0'0, Quantity: 1",
+      "timestamp": "2024-12-20T16:15:32.568Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:18:28.700Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:25:00.144Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-20T16:26:10.097Z"
+    }
+  ],
+  "gaya": [
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T16:31:54.159Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.4'0, Quantity: 1",
+      "timestamp": "2024-12-20T16:33:48.983Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-20T19:28:34.805Z"
+    },
+    {
+      "action": "Added to cart: ST-GLID-003, Size: 7.2'0, Quantity: 1",
+      "timestamp": "2024-12-20T19:29:02.638Z"
+    },
+    {
+      "action": "Login",
+      "timestamp": "2024-12-21T10:51:51.230Z"
+    },
+    {
+      "action": "Added to cart: WR-XTRM-004, Size: 6.8'0, Quantity: 1",
+      "timestamp": "2024-12-21T11:03:18.662Z"
+    },
+    {
+      "action": "Added to cart: WR-XTRM-004, Size: 6.8'0, Quantity: 1",
+      "timestamp": "2024-12-21T11:14:17.839Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-21T11:19:40.929Z"
+    }
+  ],
+  "tomerMenashe": [
+    {
+      "action": "Login",
+      "timestamp": "2024-12-24T12:31:22.323Z"
+    },
+    {
+      "action": "Logout",
+      "timestamp": "2024-12-24T12:31:36.012Z"
+    }
+  ]
+}
