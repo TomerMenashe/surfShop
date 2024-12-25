@@ -92,14 +92,21 @@ npm start
 Open your web browser and navigate to http://localhost:3000.
 
 ### Usage
-Browse the surfboards to buy from the surfboards page.
-View details and select sizes for a surfboard on its dedicated page.
-Add items to the cart and proceed to checkout.
-Access live weather and camera feeds from the navigation bar.
-Leave reviews for surfboards and read existing reviews.
-Find out the current weather of you location.
-Get spot recomendation according to your level.
-Admin users can log in to access advanced management features.
+* Browse the surfboards to buy from the surfboards page.
+
+* View details and select sizes for a surfboard on its dedicated page.
+
+* Add items to the cart and proceed to checkout.
+
+* Access live weather and camera feeds from the navigation bar.
+
+* Leave reviews for surfboards and read existing reviews.
+
+* Find out the current weather of you location.
+  
+* Get spot recomendation according to your level.
+  
+* Admin users can log in to access advanced management features.
 
 
 ## Project Structure
