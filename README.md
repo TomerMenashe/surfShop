@@ -1,70 +1,196 @@
-# Getting Started with Create React App
+# SurfShop App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the SurfShop project! This application is a complete online surf store allowing users to browse, purchase surfboards and accessories, check live weather and camera feeds, and explore surfing recommendations.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+This project consists of two main components:
 
-### `npm start`
+1. **SurfShop API**: A Node.js backend managing surfboard inventory, user authentication, cart functionality, and API integrations for weather and live cameras.
+2. **SurfShop Frontend**: A React-based frontend providing an interactive and user-friendly shopping experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Surfboard Inventory**: Browse surfboards with detailed descriptions, sizes, and images.
+- **Spot recomendation**: find a the most suitable surf spot for you current level.
+- **weather showcast**: get updated on the weather according to oyur location.
+- **User Authentication**: Secure login and registration with "Remember Me" functionality.
+- **Cart Management**: Add, update, and remove items from the cart with real-time cart updates.
+- **Live Weather and Cameras**: Access live weather updates and shore cameras for surf conditions.
+- **Surf Recommendations**: Explore spot recommendations for your next surfing adventure.
+- **Reviews**: View and add reviews for surfboards.
+- **Admin Panel**: Manage inventory, users, and reviews with special admin access.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Home Page
+![Home Page](./screenshots/homepage.png)
 
-### `npm run build`
+### Surfboard Details
+![Surfboard Details](./screenshots/surfboarddetails.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Cart Page
+![Cart Page](./screenshots/cartpage.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Admin Panel
+![Admin Panel](./screenshots/adminpanel.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+Follow these steps to run the project locally.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- npm (Node Package Manager)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Clone the Repository**
 
-## Learn More
+   ```sh
+   git clone https://github.com/yourusername/surfshop-app.git
+   cd surfshop-app
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Set up the backend**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Navigate to the server directory:
 
-### Code Splitting
+Install backend dependencies:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Run the server:
+npm start
 
-### Analyzing the Bundle Size
+3. **Set up the frontend**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Open a new terminal and navigate to the main directory:
 
-### Making a Progressive Web App
+Install Node.js dependencies:
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the React development server:
+npm start
 
-### Advanced Configuration
+4. **Access the Application**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Open your web browser and navigate to http://localhost:3000.
 
-### Deployment
+### Usage
+Browse the surfboards to buy from the surfboards page.
+View details and select sizes for a surfboard on its dedicated page.
+Add items to the cart and proceed to checkout.
+Access live weather and camera feeds from the navigation bar.
+Leave reviews for surfboards and read existing reviews.
+Find out the current weather of you location.
+Get spot recomendation according to your level.
+Admin users can log in to access advanced management features.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+│
+├── server/
+│   ├── data/
+│   │   ├── activity.json
+│   │   ├── carts.json
+│   │   ├── purchases.json
+│   │   ├── reviews.json
+│   │   ├── surfboards.json
+│   │   └── users.json
+│   ├── middleware/
+│   │   └── authMiddleware.js
+│   ├── routes/
+│   │   ├── activityRoutes.js
+│   │   ├── aiRoutes.js
+│   │   ├── authRoutes.js
+│   │   ├── cartRoutes.js
+│   │   ├── liveCameraRoutes.js
+│   │   ├── locationRoutes.js
+│   │   ├── purchaseRoutes.js
+│   │   ├── reviewRoutes.js
+│   │   ├── surfboardRoutes.js
+│   │   └── weatherRoutes.js
+│   ├── utils/
+│   │   └── persist.js
+│   ├── .env
+│   ├── config.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+│   └── README.md
+│
+├── src/
+│   ├── assets/
+│   │   └── images/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Footer.js
+│   │   │   ├── Header.js
+│   │   │   └── Layout.js
+│   ├── pages/
+│   │   ├── AdminActivityPage.js
+│   │   ├── AdminScreen.js
+│   │   ├── CartScreen.js
+│   │   ├── CheckoutScreen.js
+│   │   ├── HomePage.js
+│   │   ├── LiveShoreCamera.js
+│   │   ├── LoginPage.js
+│   │   ├── ManageProducts.js
+│   │   ├── PageWrapper.js
+│   │   ├── ReadMePage.js
+│   │   ├── RegisterPage.js
+│   │   ├── ReviewSection.js
+│   │   ├── SurfboardDetail.js
+│   │   ├── SurfboardsPage.js
+│   │   ├── SurfingRecommendationPage.js
+│   │   ├── ThankYouScreen.js
+│   │   └── WeatherPage.js
+│   ├── context/
+│   │   └── AuthContext.js
+│   ├── styles/
+│   │   ├── AdminActivityPage.css
+│   │   ├── AdminScreen.css
+│   │   ├── AuthPages.css
+│   │   ├── CartScreen.css
+│   │   ├── CheckoutScreen.css
+│   │   ├── Footer.css
+│   │   ├── global.css
+│   │   ├── Header.css
+│   │   ├── HomePage.css
+│   │   ├── LiveShoreCamera.css
+│   │   ├── ManageProducts.css
+│   │   ├── ReadMePage.css
+│   │   ├── ReviewSection.css
+│   │   ├── SurfboardDetail.css
+│   │   ├── SurfboardsPage.css
+│   │   ├── SurfingRecommendationPage.css
+│   │   ├── ThankYouScreen.css
+│   │   └── WeatherPage.css
+│   ├── utils/
+│   │   ├── PrivateRoute.js
+│   │   └── validate.js
+│   ├── App.js
+│   ├── index.js
+│   └── theme.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
+
+```
+
+### Contributing
+Contributions are welcome! Please follow these steps to contribute:
+
+1.Fork the repository.
+2.Create a new branch for your feature or bugfix.
+3.Commit your changes with clear and descriptive messages.
+4.Push your changes to your forked repository.
+5.Create a pull request to the main repository.
+
+### Author
+Tomer Menashe
+
