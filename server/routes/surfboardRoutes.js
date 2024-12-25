@@ -8,7 +8,7 @@ const { readData, writeData } = require('../utils/persist');
 const path = require('path');
 
 const router = express.Router();
-const SURFBOARDS_FILE = '/Users/tomi/Desktop/programing projects/surfShop/server/data/surfboards.json';
+const SURFBOARDS_FILE = path.join(__dirname, 'data', 'surfboards.json');
 
 /**
  * GET /search
