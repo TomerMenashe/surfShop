@@ -1,95 +1,84 @@
+//** Login page allowing users to authenticate with username and password **//
+
 import React, { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-import { Link } from 'react-router-dom';
-import { auth } from '../../firebase';
-import { useNavigate } from 'react-router-dom';
-import { db } from '../../firebase';
-import { getDocs, collection } from 'firebase/firestore';
+import { useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import '../../styles/AuthPages.css';
 
+//** Define and export the LoginPage component **//
 const LoginPage = () => {
+  //** State variables for user input **//
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState(false); 
+  const [rememberMe, setRememberMe] = useState(false);
   const [error, setError] = useState('');
+
+  //** React Router hook to navigate between pages **//
   const navigate = useNavigate();
 
-  const setCookie = (name, value, days) => {
-    let expires = "";
-    if (days) {
-      const date = new Date();
-      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-      expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-  };
+  //** Access login function from AuthContext **//
+  const { login } = useAuth();
 
+  //** Handle form submission to log in user **//
   const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
 
     try {
-      // Fetch all users from Firestore and find the one with the matching username
-      const querySnapshot = await getDocs(collection(db, 'users'));
-      const user = querySnapshot.docs.find(doc => doc.data().username === username);
-
-      if (user) {
-        // Log in using Firebase with the email from Firestore
-        await signInWithEmailAndPassword(auth, user.data().email, password);
-
-        // Set cookie expiration based on "Remember Me" checkbox
-        const cookieExpirationDays = rememberMe ? 10 : 0.0208; // 10 days if remember me, otherwise ~30 minutes
-        setCookie('username', user.data().username, cookieExpirationDays);
-
-        navigate('/'); // Redirect to home page after successful login
-      } else {
-        setError('Invalid username or password');
-      }
-    } catch (error) {
-      setError(error.message);
+      await login(username, password, rememberMe); 
+      navigate('/');  //** Redirect to homepage on successful login **//
+    } catch (err) {
+      console.error('Login error:', err.response?.data || err.message);
+      setError(err.response?.data?.message || 'Login failed. Please try again.');
     }
   };
 
+  //** Render the login form **//
   return (
     <div className="auth-container">
       <form className="auth-form" onSubmit={handleLogin}>
         <h2>Login</h2>
         {error && <p className="error">{error}</p>}
+        
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label>Username</label>
           <input
             type="text"
-            id="username"
-            placeholder="Username"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            placeholder="Enter your username"
             required
           />
         </div>
+        
         <div className="form-group">
-          <label htmlFor="password">Password</label>
+          <label>Password</label>
           <input
             type="password"
-            id="password"
-            placeholder="Password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Enter your password"
             required
           />
         </div>
+        
         <div className="form-group">
-          <label htmlFor="rememberMe">
+          <label>
             <input
               type="checkbox"
-              id="rememberMe"
               checked={rememberMe}
               onChange={(e) => setRememberMe(e.target.checked)}
             />
             Remember Me
           </label>
         </div>
+        
         <button type="submit" className="auth-btn">Login</button>
-        <p>Don't have an account? <Link to="/register">Sign Up</Link></p>
+        
+        <div className="auth-footer">
+          <span>Don't have an account? </span>
+          <Link to="/register" className="register-link">Register</Link>
+        </div>
       </form>
     </div>
   );

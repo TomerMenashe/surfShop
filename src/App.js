@@ -1,61 +1,116 @@
+//** Main application entry point: sets up routing for public and private routes **//
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import SurfboardsPage from './components/pages/SurfboardsPage';
 import SurfboardDetail from './components/pages/SurfboardDetail';
-import FinsPage from './components/pages/FinsPage';
-import AccessoriesPage from './components/pages/AccessoriesPage';
-import ApparelPage from './components/pages/ApparelPage';
+import LiveShoreCamera from './components/pages/LiveShoreCamera';
+import WeatherPage from './components/pages/WeatherPage';
+import ReviewSection from './components/pages/ReviewSection';
 import LoginPage from './components/pages/LoginPage';
 import RegisterPage from './components/pages/RegisterPage';
-import CartScreen from './components/pages/CartScreen';  // Import the Cart screen
-import CheckoutScreen from './components/pages/CheckoutScreen';  // Import the Checkout screen
-import ThankYouScreen from './components/pages/ThankYouScreen'; // Import the Thank You screen
-import AdminScreen from './components/pages/AdminScreen'; // Import the Admin screen
-
+import CartScreen from './components/pages/CartScreen';
+import CheckoutScreen from './components/pages/CheckoutScreen';
+import ThankYouScreen from './components/pages/ThankYouScreen';
+import AdminScreen from './components/pages/AdminScreen';
+import SurfingRecommendationPage from './components/pages/SurfingRecommendationPage';
+import ReadMePage from './components/pages/ReadMePage';
+import LLMPage from './components/pages/LLMPage';
 import PrivateRoute from './utils/PrivateRoute';
 import Layout from './components/layout/Layout';
-import { AuthProvider } from './context/authController';
-import { CartProvider } from './context/CartContext';  // Import CartProvider
-import { AdminProvider } from './context/AdminContext'; // Import AdminProvider
+import { AuthProvider } from './context/AuthContext';
+import { CartProvider } from './context/CartContext';
 
 function App() {
   return (
-    <AuthProvider>
-      <CartProvider>
-        <AdminProvider> {/* Wrap the app in AdminProvider for admin data */}
-          <Router>
-            <Routes>
-              {/* Public Routes */}
-              <Route path="/" element={<Layout />}>
-                <Route index element={<HomePage />} />  {/* Home Page */}
-                <Route path="surfboards" element={<SurfboardsPage />} />
-                <Route path="surfboards/:sku" element={<SurfboardDetail />} />  {/* Surfboard Details using SKU */}
-                <Route path="login" element={<LoginPage />} />
-                <Route path="register" element={<RegisterPage />} />
-              </Route>
+    <Router>
+      {/* Authentication and Cart Providers wrap the entire app for global state management */}
+      <AuthProvider>
+        <CartProvider>
+          <Routes>
+            {/* Public (unprotected) routes */}
+            <Route path="/" element={<Layout />}>
+              {/* Default home page */}
+              <Route index element={<HomePage />} />
+              
+              {/* Surfboards listing and details */}
+              <Route path="surfboards" element={<SurfboardsPage />} />
+              <Route path="surfboards/:sku" element={<SurfboardDetail />} />
+              
+              {/* Auth pages */}
+              <Route path="login" element={<LoginPage />} />
+              <Route path="register" element={<RegisterPage />} />
+              
+              {/* Additional pages */}
+              <Route path="/readme.html" element={<ReadMePage />} />
+              <Route path="/llm.html" element={<LLMPage />} />
+            </Route>
 
-              {/* Private Routes */}
-              <Route path="/" element={<Layout />}>
-                {/* Cart and Checkout are protected */}
-                <Route path="cart" element={<PrivateRoute><CartScreen /></PrivateRoute>} />  {/* Private Cart Screen */}
-                <Route path="checkout" element={<PrivateRoute><CheckoutScreen /></PrivateRoute>} />  {/* Private Checkout Screen */}
-
-                {/* Other Private Routes */}
-                <Route path="accessories" element={<PrivateRoute><AccessoriesPage /></PrivateRoute>} />
-                <Route path="apparel" element={<PrivateRoute><ApparelPage /></PrivateRoute>} />
-                <Route path="fins" element={<PrivateRoute><FinsPage /></PrivateRoute>} />
-
-                {/* Admin Screen */}
-                <Route path="admin" element={<PrivateRoute><AdminScreen /></PrivateRoute>} />  {/* Admin Dashboard */}
-              </Route>
-
-              {/* Thank You Screen */}
-              <Route path="/thank-you" element={<ThankYouScreen />} /> {/* Thank You Page */}
-            </Routes>
-          </Router>
-        </AdminProvider>
-      </CartProvider>
-    </AuthProvider>
+            {/* Private (protected) routes */}
+            <Route path="/" element={<Layout />}>
+              <Route
+                path="surf-recommendation"
+                element={
+                  <PrivateRoute>
+                    <SurfingRecommendationPage />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="live-camera"
+                element={
+                  <PrivateRoute>
+                    <LiveShoreCamera />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="weather"
+                element={
+                  <PrivateRoute>
+                    <WeatherPage />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="reviews"
+                element={
+                  <PrivateRoute>
+                    <ReviewSection />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="cart"
+                element={
+                  <PrivateRoute>
+                    <CartScreen />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="checkout"
+                element={
+                  <PrivateRoute>
+                    <CheckoutScreen />
+                  </PrivateRoute>
+                }
+              />
+              <Route
+                path="admin"
+                element={
+                  <PrivateRoute>
+                    <AdminScreen />
+                  </PrivateRoute>
+                }
+              />
+              {/* Thank-you page after successful checkout */}
+              <Route path="/thank-you" element={<ThankYouScreen />} />
+            </Route>
+          </Routes>
+        </CartProvider>
+      </AuthProvider>
+    </Router>
   );
 }
 

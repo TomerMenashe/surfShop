@@ -1,156 +1,333 @@
-/* Body Styling */
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-color: #1c1c1c; /* Match background color */
+  overflow-x: hidden; 
+  background-color: #1c1c1c; 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #fff;
 }
 
-/* Navigation Bar Consideration */
 .surfboard-page {
-  padding-top: 120px; /* Space to account for the navbar and extra buffer */
+  padding-top: 120px; 
   box-sizing: border-box;
 }
 
-/* Grid Layout for Surfboards */
 .surfboard-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Fewer boards per row */
-  gap: 40px; /* Increased spacing between cards */
-  padding: 40px 20px; /* Balanced padding */
-  background: linear-gradient(180deg, #1c1c1c, #2e2e2e); /* Black gradient background */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 40px; 
+  padding: 40px 20px; 
+  background: linear-gradient(180deg, #1c1c1c, #2e2e2e);
   justify-items: center;
   box-sizing: border-box;
-  width: 100%; /* Ensure it fills the screen */
+  width: 100%; 
 }
 
-/* Surfboard Card */
+
 .surfboard-card {
-  background: #222; /* Dark card background to align with theme */
+  background: #222; 
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Deeper shadow for black theme */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   overflow: hidden;
   display: flex;
-  flex-direction: column; /* Stack content vertically */
+  flex-direction: column;
   align-items: center;
   padding: 15px;
 }
 
 .surfboard-card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6); 
 }
 
-/* Surfboard Image */
+
 .surfboard-card img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensure proper scaling */
-  border-radius: 10px; /* Soft corners */
+  object-fit: cover; 
+  border-radius: 10px; 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 10px;
 }
 
 .surfboard-card:hover img {
-  transform: scale(1.03); /* Slight zoom effect */
-  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.5); /* Orange glow */
+  transform: scale(1.03); 
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.5); 
 }
 
-/* Surfboard Name */
-.surfboard-card h2 {
+
+.surfboard-name {
   font-family: 'Arial', sans-serif;
   font-size: 1.6rem;
-  color: #ff7f50; /* Orange theme color */
+  color: #ff7f50; 
   margin: 10px 0;
   text-align: center;
   text-transform: capitalize;
 }
 
-/* Surfboard Details (Length & Price) */
-.surfboard-card p {
+.surfboard-length,
+.surfboard-description {
   font-family: 'Helvetica Neue', sans-serif;
-  color: #bbb; /* Light text for dark theme */
+  color: #bbb; 
   font-size: 1rem;
   margin: 5px 0;
   text-align: center;
 }
 
-.surfboard-card .price {
+.price {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #ff7f50; /* Accent orange color for price */
+  color: #ff7f50; 
   margin-top: 10px;
 }
 
-/* Divider Line */
-.surfboard-card .divider {
+
+.divider {
   height: 1px;
   width: 80%;
-  background: rgba(255, 255, 255, 0.1); /* Subtle divider */
+  background: rgba(255, 255, 255, 0.1); 
   margin: 15px 0;
 }
 
-/* Responsive Adjustments */
+.surfboard-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: linear-gradient(180deg, #1c1c1c, #333);
+  box-sizing: border-box;
+}
+
+.surfboard-detail-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  background: #222;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.surfboard-detail-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+
+.surfboard-detail-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+.surfboard-detail-info h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.6rem;
+  color: #ff7f50; 
+  margin: 10px 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.surfboard-detail-info .price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #ff7f50; 
+  margin-top: 10px;
+}
+
+.surfboard-detail-info p {
+  font-family: 'Helvetica Neue', sans-serif;
+  color: #bbb; 
+  font-size: 1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.size-label {
+  font-size: 1rem;
+  color: #bbb;
+  margin-bottom: 5px;
+}
+
+.size-select {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  width: 50%;
+  background-color: #1c1c1c;
+  color: #fff;
+  transition: border 0.3s ease, background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.size-select:hover,
+.size-select:focus {
+  border-color: #ff7f50;
+  background-color: #333;
+}
+
+
+.add-to-cart-button {
+  background: #ff7f50; 
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.add-to-cart-button:hover {
+  background: #ff5733; 
+  transform: translateY(-3px); 
+}
+
+.add-to-cart-button:active {
+  transform: translateY(0);
+  background: #e64e2c; 
+}
+
+
+.loading-message,
+.error-message,
+.action-message {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.loading-message {
+  color: #bbb;
+}
+
+.error-message {
+  color: #ff7f50;
+}
+
+.action-message {
+  color: #ff7f50;
+}
+
+
 @media (max-width: 1024px) {
   .surfboard-page {
-    padding-top: 110px; /* Adjusted for slightly smaller navbar height */
+    padding-top: 110px; 
   }
 
   .surfboard-list {
-    gap: 30px; /* Adjust spacing between cards for smaller screens */
+    gap: 30px;
     padding: 30px 15px;
   }
 
-  .surfboard-card h2 {
+  .surfboard-name {
     font-size: 1.4rem;
   }
 
-  .surfboard-card .price {
+  .price {
+    font-size: 1.2rem;
+  }
+
+  .surfboard-detail-card {
+    grid-template-columns: 1fr;
+  }
+
+  .surfboard-detail-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .surfboard-detail-info .price {
     font-size: 1.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .surfboard-list {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Limit to 1-2 cards per row */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     padding: 20px 10px;
   }
 
-  .surfboard-card h2 {
+  .surfboard-name {
     font-size: 1.2rem;
   }
 
-  .surfboard-card .price {
+  .price {
+    font-size: 1rem;
+  }
+
+  .surfboard-detail-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .surfboard-detail-info .price {
+    font-size: 1rem;
+  }
+
+  .size-select {
+    width: 100%;
+  }
+
+  .add-to-cart-button {
+    width: 100%;
+    padding: 10px 20px;
     font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .surfboard-page {
-    padding-top: 100px; /* Adjust for mobile navbar height */
+    padding-top: 100px; 
   }
 
   .surfboard-list {
-    grid-template-columns: 1fr; /* Single card per row on mobile */
+    grid-template-columns: 1fr; 
     gap: 20px;
     padding: 10px;
   }
 
   .surfboard-card {
-    padding: 10px; /* Smaller padding for compact view */
+    padding: 10px; 
   }
 
   .surfboard-card img {
     border-radius: 8px;
   }
 
-  .surfboard-card h2 {
+  .surfboard-name {
     font-size: 1.1rem;
   }
 
-  .surfboard-card .price {
+  .price {
     font-size: 1rem;
+  }
+
+  .surfboard-detail-card {
+    padding: 20px;
+  }
+
+  .surfboard-detail-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .surfboard-detail-info .price {
+    font-size: 0.9rem;
+  }
+
+  .size-select {
+    width: 100%;
+  }
+
+  .add-to-cart-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
   }
 }

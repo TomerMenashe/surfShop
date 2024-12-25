@@ -1,8 +1,7 @@
-/* Footer Container */
 .footer-container {
-    background-color: #111; /* Dark background for a clean, modern look */
-    color: #fff; /* White text for contrast */
-    padding: 40px 20px; /* Adequate padding for spacing */
+    background-color: #111;  
+    color: #fff; 
+    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,18 +9,18 @@
     font-family: Arial, sans-serif;
   }
   
-  /* Footer Content (Top Section) */
+
   .footer-content {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; 
     justify-content: space-around;
     width: 100%;
     max-width: 1200px;
     margin-bottom: 30px;
   }
   
-  /* Footer Section (Support, Company, Other) */
+
   .footer-section {
     flex: 1;
     min-width: 200px;
@@ -53,10 +52,10 @@
   }
   
   .footer-links a:hover {
-    color: #ff7f50; /* Coral color on hover */
+    color: #ff7f50; 
   }
   
-  /* Social Media Icons */
+
   .footer-social {
     display: flex;
     gap: 15px;
@@ -65,7 +64,7 @@
   
   .footer-social a {
     display: inline-block;
-    width: 30px; /* Adjust size */
+    width: 30px;
     height: 30px;
   }
   
@@ -77,10 +76,10 @@
   }
   
   .footer-social img:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); 
   }
   
-  /* Footer Bottom (Copyright and Links) */
+ 
   .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -117,10 +116,10 @@
   }
   
   .footer-bottom-links a:hover {
-    color: #ff7f50; /* Coral color on hover */
+    color: #ff7f50; 
   }
   
-  /* Responsive Design for Mobile */
+
   @media (max-width: 768px) {
     .footer-content {
       flex-direction: column;

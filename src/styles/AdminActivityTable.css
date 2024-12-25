@@ -1,51 +1,78 @@
 .admin-activity-container {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .admin-activity-container h2 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .filter-input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    font-size: 16px;
-  }
-  
-  .activity-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-  }
-  
-  .activity-table th,
-  .activity-table td {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid #ddd;
-  }
-  
-  .activity-table th {
-    background-color: #f1f1f1;
-  }
-  
-  .error-message,
-  .no-activities-message,
-  .loading-message {
-    color: #d9534f; /* Bootstrap danger color */
-    font-size: 16px;
-    margin: 10px 0;
-  }
-  
-  .no-activities-message {
-    color: #999;
-  }
-  
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 800px; 
+  background-color: #fdfdfd; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.admin-activity-container h2 {
+  margin-bottom: 20px;
+  color: #2c3e50; 
+  text-align: center;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.activity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.activity-table th,
+.activity-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.activity-table th {
+  background-color: #34495e; 
+  color: #ffffff; 
+  font-weight: bold;
+}
+
+.activity-table tr:nth-child(even) {
+  background-color: #f9f9f9; 
+}
+
+.activity-table tr:hover {
+  background-color: #f1f1f1; 
+}
+
+.activity-table td {
+  color: #555; 
+}
+
+.error-message {
+  color: #d9534f; 
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.loading-message,
+.no-activities-message {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.no-activities-message {
+  color: #999; 
+}
+
+.loading-message {
+  color: #3498db; 
+}

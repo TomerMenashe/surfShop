@@ -1,64 +1,75 @@
-import React from 'react';
-import '../../styles/Footer.css'; // Make sure this path is correct
+//** Footer component for the web application **//
 
+import React from 'react';
+import '../../styles/Footer.css';
+
+//** Define and export the Footer component **//
 const Footer = () => {
   return (
     <footer className="footer-container">
+      
+      {/* Footer content sections */}
       <div className="footer-content">
-        {/* Support Section */}
+        
+        {/* Support links section */}
         <div className="footer-section">
           <h4 className="footer-title">SUPPORT</h4>
           <ul className="footer-links">
-            <li><a href="/faqs">FAQs</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/shipping">Shipping Information</a></li>
+            <li>
+              <a href="mailto:tomer.menashe.15@gmail.com" target="_self">Contact Us</a>
+            </li>
+            <li>
+              <a 
+                href="https://moodle.runi.ac.il/2024/course/view.php?id=2402174" 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Course Site
+              </a>
+            </li>
           </ul>
         </div>
 
-        {/* Company Section */}
+        {/* Contributions section */}
         <div className="footer-section">
-          <h4 className="footer-title">COMPANY</h4>
+          <h4 className="footer-title">CONTRIBUTIONS</h4>
           <ul className="footer-links">
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/store-locator">Store</a></li>
-            <li><a href="/sustainability">Sustainability</a></li>
+            <li>
+              <a href="/llm.html" target="_self">LLM Contributions</a>
+            </li>
+            <li>
+              <a href="/readme.html" target="_self">ReadMe</a>
+            </li>
           </ul>
         </div>
 
-        {/* Other Section */}
-        <div className="footer-section">
-          <h4 className="footer-title">OTHER</h4>
-          <ul className="footer-links">
-            <li><a href="/firewire-fleets">Final project</a></li>
-            <li><a href="/demo-days">Hope you enjoyed</a></li>
-            <li><a href="/volume-calculator">Thank you for watching</a></li>
-          </ul>
-        </div>
-
-        {/* Social Media Icons */}
+        {/* Social icons section */}
         <div className="footer-social">
-          <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <img src={require('../../assets/images/facebook.png')} alt="Facebook" />
+          <a href="mailto:tomer.menashe.15@gmail.com" target="_self">
+            <img src={require('../../assets/images/email.png')} alt="Email" />
           </a>
-          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src={require('../../assets/images/instagram.png')} alt="Instagram" />
+          <a 
+            href="https://www.linkedin.com/in/menashe-tomer/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img src={require('../../assets/images/linkedin.png')} alt="LinkedIn" />
           </a>
-          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
-            <img src={require('../../assets/images/youtube.png')} alt="YouTube" />
-          </a>
-          <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
-            <img src={require('../../assets/images/tiktok.png')} alt="TikTok" />
+          <a 
+            href="https://github.com/TomerMenashe" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <img src={require('../../assets/images/github.png')} alt="GitHub" />
           </a>
         </div>
       </div>
 
+      {/* Footer bottom section */}
       <div className="footer-bottom">
         <p>© 2024 - My Surf Shop - Israel</p>
         <ul className="footer-bottom-links">
-          <li><a href="/terms">Terms of Service</a></li>
-          <li><a href="/returns">Returns & Exchanges</a></li>
-          <li><a href="/privacy">Privacy Policy</a></li>
-          <li><a href="/cookies">Cookie Policy</a></li>
+          <li>Thank you for watching</li>
         </ul>
       </div>
     </footer>

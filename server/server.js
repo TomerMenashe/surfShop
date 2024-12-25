@@ -1,69 +1,127 @@
+//** Main server file that initializes and configures the Express application **//
+
 const express = require('express');
-const mongoose = require('mongoose');
+const path = require('path');
+const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
-const cookieParser = require('cookie-parser'); // For parsing cookies
-const surfboardRoutes = require('./routes/surfboardRoutes'); // Surfboard routes
-const cartRoutes = require('./routes/cartRoutes'); // Cart routes
-const userActivityRoutes = require('./routes/userActivityRoutes'); // User activity routes (Firebase)
+const rateLimit = require('express-rate-limit');
+const { readData, writeData } = require('./utils/persist');
+const fs = require('fs').promises;
 
-dotenv.config(); // Load environment variables
+//** Load environment variables from .env file **//
+dotenv.config();
 
+//** Create Express app instance **//
 const app = express();
+app.set('trust proxy', 1);
 
-// Middleware
-app.use(express.json()); // Parse JSON request bodies
-app.use(cookieParser()); // Enable cookie parsing
 
-// MongoDB Connection
-mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => {
-    console.error('MongoDB connection error:', err);
-    process.exit(1); // Exit process if DB connection fails
+//** Define the port the server will run on **//
+const PORT = process.env.PORT || 5002;
+
+//** Define paths to data directory and files **//
+const DATA_DIR = path.join(__dirname, 'data');
+const FILES = {
+  users: path.join(DATA_DIR, 'users.json'),
+  carts: path.join(DATA_DIR, 'carts.json'),
+  purchases: path.join(DATA_DIR, 'purchases.json'),
+  activity: path.join(DATA_DIR, 'activity.json'),
+  surfboards: path.join(DATA_DIR, 'surfboards.json'),
+};
+
+//** Parse JSON request bodies **//
+app.use(express.json());
+
+//** Parse cookies **//
+app.use(cookieParser());
+
+//** Apply rate limiting middleware (max 100 requests per 15 minutes from one IP) **//
+const limiter = rateLimit({
+  windowMs: 15 * 60 * 1000, 
+  max: 100,
+  message: 'Too many requests from this IP, please try again later.',
+});
+app.use(limiter);
+
+//** Ensure the data directory exists, or create it if it doesn't **//
+(async () => {
+  try {
+    await fs.mkdir(DATA_DIR, { recursive: true });
+  } catch (error) {
+    console.error('[ERROR] Creating data directory:', error.message);
+    process.exit(1);
+  }
+})();
+
+//** In-memory data caches **//
+let users = {};
+let carts = {};
+let activity = {};
+let surfboards = {};
+
+//** Load data from JSON files into memory **//
+const loadData = async () => {
+  try {
+    users = await readData(FILES.users);
+    carts = await readData(FILES.carts);
+    purchases = await readData(FILES.purchases);
+    activity = await readData(FILES.activity);
+    surfboards = await readData(FILES.surfboards);
+  } catch (error) {
+    console.error('[ERROR] Loading data:', error.message);
+    //** Fall back to empty objects if loading fails **//
+    users = carts = purchases = activity = surfboards = {};
+  }
+};
+
+//** Helper function to save updated data to the appropriate JSON file **//
+const saveData = async (type, data) => {
+  const filePath = FILES[type];
+  if (!filePath) {
+    console.error(`[ERROR] Invalid type '${type}' provided to saveData.`);
+    return;
+  }
+  try {
+    await writeData(filePath, data);
+  } catch (error) {
+    console.error(`[ERROR] Saving ${type} data:`, error.message);
+  }
+};
+
+//** Initialize the server: load data, then set up routes and start listening **//
+(async () => {
+  await loadData();
+
+  //** Set up routes for different modules **//
+  app.use('/api/auth', require('./routes/authRoutes')(users, activity, saveData));
+  app.use('/api/cart', require('./routes/cartRoutes')(carts, saveData, surfboards));
+  app.use('/api/purchases', require('./routes/purchaseRoutes'));
+  app.use('/api/activity', require('./routes/activityRoutes'));
+  app.use('/api/surfboards', require('./routes/surfboardRoutes'));
+  app.use('/api/reviews', require('./routes/reviewRoutes'));
+  app.use('/api/weather', require('./routes/weatherRoutes'));
+  app.use('/api/cameras', require('./routes/liveCameraRoutes'));
+  app.use('/api/location', require('./routes/locationRoutes'));
+  app.use('/api/ai', require('./routes/aiRoutes'));
+
+  //** Root endpoint to show that the API is running **//
+  app.get('/', (req, res) => {
+    res.send('API is running...');
   });
 
-// CORS Middleware (if needed for frontend-backend communication)
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*'); // Allow all origins
-  res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  next();
-});
+  //** Handle 404 errors (route not found) **//
+  app.use((req, res) => {
+    res.status(404).json({ message: 'Route not found' });
+  });
 
-// Route Logging Middleware for Debugging
-app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-  next();
-});
+  //** Global error handler **//
+  app.use((err, req, res, next) => {
+    console.error(`[ERROR] ${err.stack}`);
+    res.status(500).json({ message: 'Server Error' });
+  });
 
-// Health Check Endpoint
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
-
-// API Routes
-app.use('/api/surfboards', surfboardRoutes); // Surfboard routes
-app.use('/api/cart', cartRoutes); // Cart routes
-app.use('/api/admin/activities', userActivityRoutes); // Adjusted to match the frontend expectation
-
-// 404 Not Found Handler
-app.use((req, res) => {
-  console.error(`[404] Route not found: ${req.method} ${req.url}`);
-  res.status(404).json({ message: 'Route not found' });
-});
-
-// Global Error Handling Middleware
-app.use((err, req, res, next) => {
-  console.error(`[500] Internal Server Error: ${err.stack}`);
-  res.status(500).json({ message: 'Internal Server Error' });
-});
-
-// Start Server
-const PORT = process.env.PORT || 5002;
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+  //** Start the server **//
+  app.listen(PORT, () => {
+    console.log(`[INFO] Server running on port ${PORT}`);
+  });
+})();

@@ -1,0 +1,45 @@
+.llm-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.8;
+  }
+  
+  .llm-title {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  .llm-section {
+    margin-bottom: 25px;
+  }
+  
+  .llm-section h2 {
+    font-size: 1.8rem;
+    color: #005f99;
+    margin-bottom: 10px;
+  }
+  
+  .llm-section p,
+  .llm-section ul {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .llm-section ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 15px;
+  }
+  
+  .llm-section ul li {
+    margin-bottom: 8px;
+  }
+  

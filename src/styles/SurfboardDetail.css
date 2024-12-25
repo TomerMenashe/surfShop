@@ -1,23 +1,21 @@
-/* Page Container */
 .surfboard-detail-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   min-height: 100vh;
   padding: 40px 20px;
-  background: linear-gradient(180deg, #1c1c1c, #333); /* Dark gradient to match theme */
+  background: linear-gradient(180deg, #1c1c1c, #333);
   box-sizing: border-box;
 }
 
-/* Detail Card */
 .surfboard-detail-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  background: #222; /* Dark card background */
+  background: #222;
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow for dark theme */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
   max-width: 1100px;
   width: 100%;
   box-sizing: border-box;
@@ -27,41 +25,37 @@
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
 }
 
-/* Surfboard Image */
 .surfboard-detail-image {
   width: 100%;
   height: auto;
   object-fit: cover;
   border-radius: 12px;
-  background-color: #333; /* Darker background for image placeholder */
+  background-color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .surfboard-detail-image:hover {
   transform: scale(1.03);
-  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.5); /* Coral glow */
+  box-shadow: 0 6px 15px rgba(255, 127, 80, 0.5);
 }
 
-/* Info Section */
 .surfboard-detail-info {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-/* Main Heading */
 .surfboard-detail-info h2 {
   font-family: 'Arial', sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  color: #ff7f50; /* Coral heading color */
+  color: #ff7f50;
   margin-bottom: 20px;
 }
 
-/* Details (Paragraphs) */
 .surfboard-detail-info p {
   font-family: 'Helvetica Neue', sans-serif;
-  color: #bbb; /* Light gray text for dark background */
+  color: #bbbbbb;
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 15px;
@@ -70,30 +64,35 @@
 .surfboard-detail-info .price {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #ff7f50; /* Coral for prices */
+  color: #ff7f50;
   margin-bottom: 20px;
 }
 
-/* Size Dropdown */
+/* Make the 'Choose Size:' label white */
+.size-label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+/* Keep the select bar gray even when not hovered */
 .size-select {
   font-size: 1rem;
   padding: 10px;
   margin-top: 10px;
   border-radius: 8px;
-  border: 1px solid #555; /* Subtle border for dark theme */
+  border: 1px solid #555;
   width: 50%;
-  background-color: #1c1c1c; /* Match dark theme */
-  color: #fff;
+  background-color: #666; /* Gray background by default */
+  color: #e6e1e1;
   transition: border 0.3s ease, background-color 0.3s ease;
 }
 
 .size-select:hover,
 .size-select:focus {
-  border-color: #ff7f50; /* Coral border on hover/focus */
-  background-color: #333;
+  border-color: #ff7f50;
+  background-color: #555; /* Slightly darker gray on hover/focus */
 }
 
-/* Button Group */
 .button-group {
   display: flex;
   gap: 20px;
@@ -101,8 +100,8 @@
 }
 
 .button-group button {
-  background: #ff7f50; /* Coral button color */
-  color: #fff;
+  background: #ff7f50;
+  color: #555;
   border: none;
   padding: 12px 25px;
   font-size: 1.1rem;
@@ -112,16 +111,15 @@
 }
 
 .button-group button:hover {
-  background: #ff5733; /* Darker coral on hover */
-  transform: translateY(-3px); /* Lift effect */
+  background: #ff5733;
+  transform: translateY(-3px);
 }
 
 .button-group button:active {
   transform: translateY(0);
-  background: #e64e2c; /* Slightly darker coral */
+  background: #e64e2c;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .surfboard-detail-card {
     grid-template-columns: 1fr;

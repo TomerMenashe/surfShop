@@ -1,114 +1,122 @@
+//** Displays detailed information about a specific surfboard, with the option to add it to the cart **//
+
 import React, { useEffect, useState } from 'react';
-import { useParams, useLocation } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { useCart } from '../../context/CartContext'; // Import the cart context
-import PageWrapper from './PageWrapper'; // Import the PageWrapper component
-import '../../styles/SurfboardDetail.css';
+import { useAuth } from '../../context/AuthContext';
+import '../../styles/SurfboardsPage.css'; // Existing styles
+import '../../styles/SurfboardDetail.css'; // Updated CSS code above
 
 const SurfboardDetail = () => {
+  //** Extract the SKU from the URL parameters **//
   const { sku } = useParams();
-  const { state } = useLocation();
-  const { addToCart } = useCart(); // Use the addToCart function from CartContext
-  const [surfboard, setSurfboard] = useState(state?.surfboard || null);
-  const [loading, setLoading] = useState(!surfboard);
-  const [selectedSize, setSelectedSize] = useState("6'0"); // Default size
-  const [cartMessage, setCartMessage] = useState('');
 
-  const sizes = ["5'8", "6'0", "7'0", "7'6"]; // Available sizes
+  //** For navigation upon adding to cart or if user is not logged in **//
+  const navigate = useNavigate();
 
+  //** Retrieve user data from the AuthContext **//
+  const { user } = useAuth();
+
+  //** Local state to store surfboard details, the selected size, and messages **//
+  const [surfboard, setSurfboard] = useState(null);
+  const [selectedSize, setSelectedSize] = useState('');
+  const [message, setMessage] = useState('');
+
+  //** Fetch surfboard details on component mount or SKU change **//
   useEffect(() => {
-    if (!surfboard) {
-      const fetchSurfboard = async () => {
-        try {
-          const response = await axios.get(`/api/surfboards/${sku}`);
-          setSurfboard(response.data);
-          setLoading(false);
-        } catch (error) {
-          console.error('Error fetching surfboard details:', error);
-          setLoading(false);
-        }
-      };
-      fetchSurfboard();
-    }
-  }, [sku, surfboard]);
-
-  const handleSizeChange = (e) => {
-    setSelectedSize(e.target.value);
-  };
-
-  const handleAddToCart = () => {
-    // Add the selected surfboard with the selected size to the cart
-    const productToAdd = {
-      ...surfboard,
-      size: selectedSize,
-      quantity: 1, // Set the default quantity to 1
+    const fetchDetails = async () => {
+      try {
+        const response = await axios.get(`/api/surfboards/${sku}`);
+        setSurfboard(response.data);
+        setSelectedSize(response.data.sizes[0]); //** Default to the first available size **//
+      } catch (err) {
+        console.error('Error fetching surfboard details:', err.message);
+        setMessage('Failed to load surfboard details.');
+      }
     };
-    addToCart(productToAdd); // Call the addToCart function from CartContext
-    setCartMessage(`Added ${surfboard.model} (${selectedSize}) to the cart!`);
+    fetchDetails();
+  }, [sku]);
+
+  //** Handle adding the surfboard to the user's cart **//
+  const handleAddToCart = async () => {
+    //** Redirect to login if user is not authenticated **//
+    if (!user) {
+      navigate('/login');
+      return;
+    }
+
+    try {
+      await axios.post(
+        '/api/cart/add',
+        { sku: surfboard.sku, size: selectedSize, quantity: 1 },
+        { withCredentials: true }
+      );
+      setMessage('Item added to cart!');
+    } catch (err) {
+      console.error('Error adding to cart:', err.message);
+      setMessage('Failed to add to cart.');
+    }
   };
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  //** Handle navigating to review section for this board **//
+  const handleViewReviews = () => {
+    // Navigate to the reviews page with the SKU as a query parameter
+    navigate(`/reviews?sku=${surfboard.sku}`);
+  };
 
+  //** Show a loading message until surfboard data is retrieved **//
   if (!surfboard) {
-    return <div>No surfboard data available.</div>;
+    return <p className="loading-message">Loading...</p>;
   }
 
+  //** Render detailed information about the surfboard **//
   return (
-    <PageWrapper>
-      <div className="surfboard-detail-container">
-        <div className="surfboard-detail-card">
-          <img
-            src={surfboard.image}
-            alt={surfboard.model}
-            className="surfboard-detail-image"
-          />
-          <div className="surfboard-detail-info">
-            <h2>
-              {surfboard.brand} - {surfboard.model}
-            </h2>
-            <p className="price">
-              ${surfboard.price}
-              {surfboard.discount && (
-                <span className="discounted-price"> ${surfboard.discount}</span>
-              )}
-            </p>
+    <div className="surfboard-detail-page">
+      <div className="surfboard-detail-card">
+        {/* Surfboard Image */}
+        <img
+          src={surfboard.image}
+          alt={`${surfboard.brand} ${surfboard.model}`}
+          className="surfboard-detail-image"
+        />
 
-            {/* Size Selection */}
-            <h3 className="subheading">Choose Size:</h3>
-            <select
-              value={selectedSize}
-              onChange={handleSizeChange}
-              className="size-select"
-            >
-              {sizes.map((size) => (
-                <option key={size} value={size}>
-                  {size}
-                </option>
-              ))}
-            </select>
+        {/* Surfboard Info */}
+        <div className="surfboard-detail-info">
+          <h2 className="surfboard-name">
+            {`${surfboard.brand} - ${surfboard.model}`}
+          </h2>
+          <div className="divider"></div>
+          <p className="price">${surfboard.price}</p>
+          <p className="surfboard-description">{surfboard.description}</p>
 
-            {/* Add to Cart Button */}
-            <div className="button-group">
-              <button onClick={handleAddToCart}>Add to Cart</button>
-            </div>
+          {/* Size Selection */}
+          <label htmlFor="size" className="size-label">
+            Choose Size:
+          </label>
+          <select
+            id="size"
+            className="size-select"
+            value={selectedSize}
+            onChange={(e) => setSelectedSize(e.target.value)}
+          >
+            {surfboard.sizes.map((size) => (
+              <option key={size} value={size}>
+                {size}
+              </option>
+            ))}
+          </select>
 
-            {/* Display cart message */}
-            {cartMessage && <p className="cart-message">{cartMessage}</p>}
-
-            <h3 className="subheading">Model Overview</h3>
-            <p className="description">{surfboard.description}</p>
-            {surfboard.conditions && (
-              <>
-                <h3 className="subheading">Conditions</h3>
-                <p className="description">{surfboard.conditions}</p>
-              </>
-            )}
+          {/* Action Buttons */}
+          <div className="button-group">
+            <button onClick={handleAddToCart}>Add to Cart</button>
+            <button onClick={handleViewReviews}>View Reviews</button>
           </div>
+
+          {/* Success/Error Message */}
+          {message && <p className="action-message">{message}</p>}
         </div>
       </div>
-    </PageWrapper>
+    </div>
   );
 };
 

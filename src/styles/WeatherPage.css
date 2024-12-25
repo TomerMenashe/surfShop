@@ -1,0 +1,71 @@
+.weather-page-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+    color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .weather-page-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff7f50;
+  }
+  
+  .weather-input-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+  }
+  
+  .weather-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: none;
+    background: #ff7f50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .weather-button:hover {
+    background: #ff4500;
+  }
+  
+  .current-weather img,
+  .forecast-card img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .weather-forecast {
+    margin-top: 30px;
+  }
+  
+  .forecast-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .forecast-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+  }
+  
