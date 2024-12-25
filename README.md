@@ -38,8 +38,8 @@ This project consists of two main components:
 ### Live Camera
 ![Live Camera Page](./src/assets/images/liveCamera.png)
 
-### Find A Spot
-![Find A Spot](./src/assets/images/findASpot.png)
+### Weather
+![Weather](./src/assets/images/weather.png)
 
 ### Find A Spot
 ![Find A Spot](./src/assets/images/findASpot.png)
