@@ -64,7 +64,7 @@ Follow these steps to run the project locally.
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/yourusername/surfshop-app.git
+   git clone https://github.com/yourusername/surfshop-app.git](https://github.com/TomerMenashe/surfShop.git)
    cd surfshop-app
 
 2. **Set up the backend**
