@@ -186,9 +186,13 @@ Admin users can log in to access advanced management features.
 Contributions are welcome! Please follow these steps to contribute:
 
 1.Fork the repository.
+
 2.Create a new branch for your feature or bugfix.
+
 3.Commit your changes with clear and descriptive messages.
+
 4.Push your changes to your forked repository.
+
 5.Create a pull request to the main repository.
 
 ### Author
